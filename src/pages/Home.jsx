@@ -18,8 +18,8 @@ function Home() {
           </p>
 
           <div className="flex justify-center md:mt-10 2xl:mt-14 mt-24">
-            <button className="px-5 py-2 md:px-7 md:py-3 lg:px-10 lg:py-5 text-2xl md:text-3xl rounded-md text-gray-200 font-Poppins font-semibold bg-gradient-to-br from-gray-500 via-red-500 to-gray-500 ">
-              View Details
+            <button className="px-14 py-3 lg:px-20 lg:py-4 text-2xl md:text-3xl rounded-md text-gray-200 font-Poppins font-semibold bg-gradient-to-br from-gray-500 via-red-500 to-gray-500 ">
+              Log in
             </button>
           </div>
         </div>
