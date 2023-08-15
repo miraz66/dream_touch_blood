@@ -1,9 +1,11 @@
 import MainPhoto from "../assets/MainPhoto.jpg";
+import BloodIconPopup from "../components/BloodImagePopup";
 
 function Home() {
   return (
     <>
       <div className="h-screen bg-white overflow-hidden max-md:p-2">
+        <BloodIconPopup />
         <div className="max-w-6xl mx-auto">
           <img
             className="w-[250px] md:w-[300px] lg:w-[400px] mx-auto pt-10 pb-4"
@@ -18,9 +20,12 @@ function Home() {
           </p>
 
           <div className="flex justify-center md:mt-10 2xl:mt-14 mt-24">
-            <button className="px-14 py-3 lg:px-20 lg:py-4 text-2xl md:text-3xl rounded-md text-gray-200 font-Poppins font-semibold bg-gradient-to-br from-gray-500 via-red-500 to-gray-500 ">
+            <a
+              href="/login"
+              className="px-14 py-3 lg:px-20 lg:py-4 text-2xl md:text-3xl rounded-md text-gray-200 font-Poppins font-semibold bg-gradient-to-br from-gray-500 via-red-500 to-gray-500"
+            >
               Log in
-            </button>
+            </a>
           </div>
         </div>
       </div>
