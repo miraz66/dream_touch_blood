@@ -11,7 +11,6 @@ const cardsData = [
       "I proudly donate blood on a regular basis because it gives others someting they desperately need to survive. Just knowing i cian make a difference in someone else's life makes me feel great!",
     name: "Brandon Munson",
     address: "khulna,Bangladesh",
-    image: { DoctorImage },
   },
   {
     header: "Donor Opinion",
