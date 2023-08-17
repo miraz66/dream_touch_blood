@@ -18,7 +18,6 @@ const cardsData = [
     paragraph: `I have been a donar since high school.Aithough i hava no been a donaor ever year, i always want to give to the humen rase. i love to help others! Moreover it gives a real peace in mind.`,
     name: "Brandon Munson",
     address: "khulna,Bangladesh",
-    image: { DoctorImage },
   },
   {
     header: "Donor Opinion",
@@ -107,9 +106,9 @@ const CardSlider = () => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentCard * 100}%)` }}
         >
-          {/* {cardsData.map((card, index) => (
+          {cardsData.map((card, index) => (
             <Card key={index} header={card.header} pra={card.paragraph} />
-          ))} */}
+          ))}
         </div>
         <div className="flex justify-center mt-4">
           {cardsData.map((_, index) => (
