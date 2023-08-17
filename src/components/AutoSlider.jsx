@@ -24,7 +24,6 @@ const cardsData = [
       "I wish I could tell you my donor how grateful i am for your selfiess act.You gave me new life. We may be coworkers of schoolmates of just two in the same cammunity. I'm very grateful to you.",
     name: "Brandon Munson",
     address: "khulna,Bangladesh",
-    image: { DoctorImage },
   },
 ];
 
