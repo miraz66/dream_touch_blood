@@ -1,18 +1,18 @@
 function DetailsCompany() {
   return (
     <>
-      <div className="max-w-7xl mx-auto flex justify-between my-32">
-        <div className="w-1/2 relative">
-          <div className="bg-gray-100 p-14 top-14 absolute -right-14 rounded-l-lg">
+      <div className="max-w-7xl mx-auto flex justify-between max-lg:flex-wrap-reverse my-32">
+        <div className="w-full lg:w-1/2 relative">
+          <div className="bg-gray-100 p-14 top-14 lg:absolute -right-14 rounded-l-lg">
             <h2 className="text-5xl font-medium text-gray-800 pb-2">
               Who We Are?
             </h2>
             <hr className="w-28 bg-red-600 h-0.5 mb-5" />
-            <p className="text-lg pb-5">
+            <p className="text-lg pb-5 text-gray-800">
               Blood Buddies is for public donation center with blood donation
               members in the changing health care system.
             </p>
-            <ul className="text-base list-disc pl-10 marker:text-red-600">
+            <ul className="text-base text-gray-700 list-disc pl-10 marker:text-red-600">
               <li>Specialist blood donors and clinical supervision.</li>
               <li>Increasing communication with our members.</li>
               <li>High quality assessment, diagnosis and treatment.</li>
@@ -21,8 +21,9 @@ function DetailsCompany() {
             </ul>
           </div>
         </div>
-        <div className="w-1/2 h-[25rem]">
-          <div className="h-full flex justify-center items-center bg-no-repeat bg-center bg-[url('assets/home_1_slider_1.jpg')]">
+
+        <div className="w-full lg:w-1/2 h-[25rem]">
+          <div className="h-full flex justify-center items-center bg-no-repeat bg-cover bg-[url('assets/about_feat_bg.jpg')]">
             <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

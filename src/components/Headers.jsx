@@ -22,7 +22,7 @@ export default function Header() {
         {({ open }) => (
           <>
             <div className="py-3 px-2 2xl:py-4 sm:px-8 lg:px-10">
-              <div className=" md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto flex h-16 items-center justify-between">
+              <div className="md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto flex max-lg:flex-wrap h-16 items-center lg:justify-between justify-center">
                 <div className="inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -37,15 +37,41 @@ export default function Header() {
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex items-center">
-                    <img className="w-10 md:w-16 xl:w-20" src={""} alt="" />
                     <a
-                      className="text-gray-400 font-bold text-3xl lg:text-4xl 2xl:text-5xl"
+                      className="text-gray-400 lg:text-center font-bold text-3xl lg:text-4xl 2xl:text-5xl"
                       href="http://localhost:5173/"
                     >
                       <span className="text-red-500">Blood</span>{" "}
                       <span className="font-serif">Donate</span>
                     </a>
                   </div>
+                </div>
+
+                <div className="relative ml-10 lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-10 h-10 cursor-pointer hover:text-gray-700"
+                    onClick={() => setIsModalOpen(!isModalOpen)}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+
+                  {isModalOpen && (
+                    <TestModal
+                      css={"absolute top-14 right-0"}
+                      onClose={() => setIsModalOpen(!isModalOpen)}
+                    >
+                      <UserProfileModel />
+                    </TestModal>
+                  )}
                 </div>
 
                 <div
@@ -74,7 +100,7 @@ export default function Header() {
                     </div>
                   </div>
 
-                  <div className="relative ml-10">
+                  <div className="relative ml-10 max-lg:hidden">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
