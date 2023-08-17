@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "./test/TestimonialCard";
 import DoctorImage from "../assets/image-Doctor.jpg";
 
-const delay = 5000;
+// const delay = 5000;
 
 const cardsData = [
   {
@@ -107,9 +107,9 @@ const CardSlider = () => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentCard * 100}%)` }}
         >
-          {cardsData.map((card, index) => (
+          {/* {cardsData.map((card, index) => (
             <Card key={index} header={card.header} pra={card.paragraph} />
-          ))}
+          ))} */}
         </div>
         <div className="flex justify-center mt-4">
           {cardsData.map((_, index) => (
