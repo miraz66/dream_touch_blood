@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "./test/TestimonialCard";
 import DoctorImage from "../assets/image-Doctor.jpg";
 
-// const delay = 5000;
+const delay = 5000;
 
 const cardsData = [
   {
