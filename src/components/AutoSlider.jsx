@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Card from "./test/TestimonialCard";
 import DoctorImage from "../assets/image-Doctor.jpg";
 
