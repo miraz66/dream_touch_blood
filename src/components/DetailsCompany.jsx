@@ -1,9 +1,9 @@
 function DetailsCompany() {
   return (
     <>
-      <div className="max-w-7xl mx-auto flex justify-between max-lg:flex-wrap-reverse my-32">
+      <div className="max-w-7xl my-20 md:my-32 mx-auto flex justify-between max-lg:flex-wrap-reverse">
         <div className="w-full lg:w-1/2 relative">
-          <div className="bg-gray-100 p-14 top-14 lg:absolute -right-14 rounded-l-lg">
+          <div className="bg-gray-100 max-md:m-3 md:p-14 top-14 lg:absolute -right-14 rounded-md md:rounded-l-lg">
             <h2 className="text-5xl font-medium text-gray-800 pb-2">
               Who We Are?
             </h2>
@@ -23,8 +23,8 @@ function DetailsCompany() {
         </div>
 
         <div className="w-full lg:w-1/2 h-[25rem]">
-          <div className="h-full flex justify-center items-center bg-no-repeat bg-cover bg-[url('assets/about_feat_bg.jpg')]">
-            <div className="">
+          <div className="h-full max-md:mx-3 max-md:rounded-md flex justify-center items-center bg-no-repeat bg-cover bg-[url('assets/about_feat_bg.jpg')]">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
