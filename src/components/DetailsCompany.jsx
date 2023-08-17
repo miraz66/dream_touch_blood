@@ -17,7 +17,7 @@ function DetailsCompany() {
               <li>Increasing communication with our members.</li>
               <li>High quality assessment, diagnosis and treatment.</li>
               <li>Examine critically to ensure alignment.</li>
-              <li>The extra care of a multi-disciplinary team</li>
+              <li>The extra care of a multi-disciplinary team.</li>
             </ul>
           </div>
         </div>
