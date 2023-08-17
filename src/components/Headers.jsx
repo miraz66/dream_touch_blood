@@ -2,8 +2,8 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import TestModal from "../utils/Modle/Modle";
-import UserProfileModel from "./test/UserProfileModel";
+import TestModal from "../utils/Modle";
+import UserProfileModel from "./UserProfileModel";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,9 +21,9 @@ export default function Header() {
       <Disclosure as="nav" className="">
         {({ open }) => (
           <>
-            <div className="mx-auto max-full py-3 px-2 2xl:py-5 sm:px-8 lg:px-10">
-              <div className="relative md:max-w-2xl pt-5 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto flex h-16 items-center justify-between">
-                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="py-3 px-2 2xl:py-4 sm:px-8 lg:px-10">
+              <div className=" md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto flex h-16 items-center justify-between">
+                <div className="inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -62,7 +62,7 @@ export default function Header() {
                             return (
                               "px-3 font-medium" +
                               (!isActive
-                                ? "after:content-[' '] after:bg-black after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer lg:text-lg"
+                                ? "after:content-[' '] after:bg-red-500 after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer lg:text-lg"
                                 : "cursor-pointer border-b-2 border-black")
                             );
                           }}
@@ -81,7 +81,7 @@ export default function Header() {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-10 h-10 cursor-pointer"
+                      className="w-10 h-10 cursor-pointer hover:text-gray-700"
                       onClick={() => setIsModalOpen(!isModalOpen)}
                     >
                       <path
@@ -90,11 +90,10 @@ export default function Header() {
                         d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <div className="absolute top-10 right-1/2"></div>
 
                     {isModalOpen && (
                       <TestModal
-                        css={"absolute top-10 right-0"}
+                        css={"absolute top-14 right-0"}
                         onClose={() => setIsModalOpen(!isModalOpen)}
                       >
                         <UserProfileModel />

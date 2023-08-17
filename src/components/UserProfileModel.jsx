@@ -11,7 +11,7 @@ function UserProfileModel() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-10 h-10 cursor-pointer"
+          className="w-16 h-16 cursor-pointer"
         >
           <path
             strokeLinecap="round"
