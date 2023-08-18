@@ -43,19 +43,31 @@
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
-/* Slideshow */
-.slideshowDot {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-
+.prev,
+.next {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background: var(--clr-grey-5);
+  color: var(--clr-white);
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: var(--radius);
   cursor: pointer;
-  margin: 15px 7px 0px;
-
-  background-color: #c4c4c4;
+  transition: var(--transition);
 }
 
-.slideshowDot.active {
-  background-color: #6a0dad;
+.prev:hover,
+.next:hover {
+  background: var(--clr-primary-5);
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
 }

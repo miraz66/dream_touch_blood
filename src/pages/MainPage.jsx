@@ -1,10 +1,7 @@
 import DetailsCompany from "../components/DetailsCompany";
 import Headers from "../components/Headers";
 import Testimonial from "../components/Testimonial";
-import TestimonialCard from "../components/test/TestimonialCard";
 import Button from "../utils/Button";
-// import image from "../assets/";
-import { DonarTestimonial } from "../assets/DonarTestimonial";
 
 function MainPage() {
   return (
@@ -46,14 +43,7 @@ function MainPage() {
         <DetailsCompany />
 
         {/* Donar Testimonial */}
-
         <Testimonial />
-
-        {DonarTestimonial.map((data, index) => (
-          <div key={index} className="">
-            <TestimonialCard header={data.header} pra={data.paragraph} />
-          </div>
-        ))}
       </div>
     </>
   );
