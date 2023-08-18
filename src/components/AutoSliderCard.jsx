@@ -1,38 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./test/TestimonialCard";
-import DoctorImage from "../assets/image-Doctor.jpg";
-// import data from "../assets/Data";
-
-// const delay = 5000;
-
-const cardsData = [
-  {
-    id: 1,
-    title: "Donor Opinion",
-    paragraph:
-      "I proudly donate blood on a regular basis because it gives others someting they desperately need to survive. Just knowing i cian make a difference in someone else's life makes me feel great!",
-    name: "Brandon Munson",
-    address: "khulna,Bangladesh",
-    image: { DoctorImage },
-  },
-  {
-    id: 2,
-    title: "Donor Opinion",
-    paragraph: `I have been a donar since high school.Aithough i hava no been a donaor ever year, i always want to give to the humen rase. i love to help others! Moreover it gives a real peace in mind.`,
-    name: "Brandon Munson",
-    address: "khulna,Bangladesh",
-    image: { DoctorImage },
-  },
-  {
-    id: 3,
-    title: "Donor Opinion",
-    paragraph:
-      "I wish I could tell you my donor how grateful i am for your selfiess act.You gave me new life. We may be coworkers of schoolmates of just two in the same cammunity. I'm very grateful to you.",
-    name: "Brandon Munson",
-    address: "khulna,Bangladesh",
-    image: { DoctorImage },
-  },
-];
+import cardsData from "../assets/TestimonialData";
 
 function AutoSliderCard() {
   const [people] = useState(cardsData);
@@ -58,7 +26,7 @@ function AutoSliderCard() {
 
   return (
     <>
-      <div className="mt-4 text-center relative flex overflow-hidden h-[480px] bg-red-300">
+      <div className="mt-4 relative flex overflow-hidden h-[480px] bg-red-300">
         {people.map((person, personIndex) => {
           const { id, image, name, paragraph, address, title } = person;
           let position = " translate-x-full";

@@ -7,6 +7,13 @@ export default function TestimonialCard({ header, pra, name, image, address }) {
         <div>
           <h2>{header}</h2>
           {pra}
+
+          <div className="">
+            <img src={image} alt="Man_photo" />
+
+            <h3>{name}</h3>
+            <p>{address}</p>
+          </div>
         </div>
       </div>
     </>
