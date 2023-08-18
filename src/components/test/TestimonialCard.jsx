@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function TestimonialCard({ header, pra, name, image, address }) {
   return (
     <>
-      <div className="max-w-md bg-slate-200">
+      <div className="bg-slate-200">
         <div>
           <h2>{header}</h2>
           {pra}
