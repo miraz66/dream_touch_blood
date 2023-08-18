@@ -5,17 +5,27 @@ export default function Testimonial() {
   return (
     <>
       <div className="bg-no-repeat bg-center bg-cover bg-[url('assets/testimony_feat_bg.jpg')]">
-        <div className="max-w-7xl mx-auto flex justify-between">
-          <div className="w-1/2">
-            <AutoSliderCard />
+        <div className="max-w-6xl lg:mx-16 2xl:mx-auto py-20">
+          <div className="py-10 text-white text-center">
+            <h5 className="md:text-xl">Awesome Words From Members</h5>
+            <div className=""></div>
+            <hr className="mx-auto w-16 md:w-28 bg-white my-3" />
+            <h2 className="text-3xl md:text-5xl pb-10 font-medium">
+              JOIN WITH US AND SAVE LIFE
+            </h2>
           </div>
+          <div className="lg:flex lg:justify-between">
+            <div className="lg:w-1/2 bg-white max-lg:pb-10">
+              <AutoSliderCard />
+            </div>
 
-          <div className="w-1/2">
-            <img
-              className="w-32"
-              src={TestimonyFeatImg}
-              alt="TestimonyFeatImg"
-            />
+            <div className="lg:w-1/2 hidden lg:block">
+              <img
+                className="h-[37rem] w-full"
+                src={TestimonyFeatImg}
+                alt="TestimonyFeatImg"
+              />
+            </div>
           </div>
         </div>
       </div>

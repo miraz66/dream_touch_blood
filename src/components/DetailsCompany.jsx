@@ -1,9 +1,9 @@
 function DetailsCompany() {
   return (
     <>
-      <div className="max-w-7xl my-20 md:my-32 mx-auto flex justify-between max-lg:flex-wrap-reverse">
+      <div className="max-w-7xl mt-20 md:mt-28 md:mb-36 lg:mx-5 2xl:mx-auto flex justify-between max-lg:flex-wrap-reverse">
         <div className="w-full lg:w-1/2 relative">
-          <div className="bg-gray-100 max-md:m-3 p-3 md:p-14 top-14 lg:absolute -right-14 rounded-md md:rounded-l-lg">
+          <div className="bg-gray-100 max-md:m-3 p-3 md:p-6 xl:p-14 xl:top-14 lg:absolute xl:-right-14 rounded-md md:rounded-l-lg">
             <h2 className="text-3xl md:text-5xl font-medium text-gray-800 pb-2">
               Who We Are?
             </h2>
@@ -12,7 +12,7 @@ function DetailsCompany() {
               Blood Buddies is for public donation center with blood donation
               members in the changing health care system.
             </p>
-            <ul className="text-sm md:text-base text-gray-700 list-disc pl-10 marker:text-red-600">
+            <ul className="text-sm md:text-base text-gray-700 list-disc pl-10 lg:pl-3 xl:pl-10 marker:text-red-600">
               <li>Specialist blood donors and clinical supervision.</li>
               <li>Increasing communication with our members.</li>
               <li>High quality assessment, diagnosis and treatment.</li>

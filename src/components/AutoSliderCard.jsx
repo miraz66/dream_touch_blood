@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Card from "./test/TestimonialCard";
+import TestimonialCard from "./test/TestimonialCard";
 import cardsData from "../assets/TestimonialData";
 
 function AutoSliderCard() {
@@ -26,7 +26,7 @@ function AutoSliderCard() {
 
   return (
     <>
-      <div className="mt-4 relative flex overflow-hidden h-[480px] bg-red-300">
+      <div className="mt-4 relative flex overflow-hidden h-[30rem]">
         {people.map((person, personIndex) => {
           const { id, image, name, paragraph, address, title } = person;
           let position = " translate-x-full";
@@ -44,7 +44,7 @@ function AutoSliderCard() {
               key={id}
               className={`absolute opacity-0 ease-linear duration-500 ${position}`}
             >
-              <Card
+              <TestimonialCard
                 name={name}
                 image={image}
                 pra={paragraph}
@@ -93,12 +93,12 @@ function AutoSliderCard() {
         </div>
       </div>
 
-      <div className="mt-4 flex justify-center">
+      <div className="ml-5 md:ml-16 mt-4 flex justify-start">
         {people.map((_, i) => (
           <button
             key={i}
-            className={`mx-1 w-3 h-3 rounded-full ${
-              i === index ? "bg-blue-500" : "bg-gray-300"
+            className={`mx-1 w-4 h-4 rounded-full ${
+              i === index ? "bg-red-500" : "border-2 border-gray-400"
             }`}
             onClick={() => setIndex(i)}
           ></button>
