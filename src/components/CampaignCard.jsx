@@ -23,7 +23,7 @@ export default function CampainCard({
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w- h-5 text-red-600"
+              className="w-5 h-5 text-red-600"
             >
               <path
                 strokeLinecap="round"
@@ -44,7 +44,7 @@ export default function CampainCard({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-5 h-5 bg-red-600"
               >
                 <path
                   strokeLinecap="round"
@@ -62,7 +62,7 @@ export default function CampainCard({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-5 h-5 bg-red-600"
               >
                 <path
                   strokeLinecap="round"
