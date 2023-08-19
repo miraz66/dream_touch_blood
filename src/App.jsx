@@ -17,9 +17,9 @@ function App() {
     <div className="font-Poppins">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/mainpage" element={<MainPage />} />
+          <Route path="/" element={<MainPage />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
