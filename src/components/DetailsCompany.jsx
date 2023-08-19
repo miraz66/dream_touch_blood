@@ -29,7 +29,7 @@ function DetailsCompany() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-28 h-28 p-5 border-8 rounded-full cursor-pointer hover:border-red-600 hover:text-white ease-in-out duration-300 bg-gray-600 text-red-600 opacity-70"
+                className="w-28 h-28 p-5 border-8 rounded-full cursor-pointer hover:border-red-600 hover:text-white hover:bg-black ease-in-out duration-500 bg-gray-700 text-red-600 opacity-70"
               >
                 <path
                   fillRule="evenodd"
