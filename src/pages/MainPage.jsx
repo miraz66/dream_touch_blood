@@ -1,6 +1,7 @@
 import Campaigns from "../components/Campaigns";
 import DetailsCompany from "../components/DetailsCompany";
 import Headers from "../components/Headers";
+import Information from "../components/Information";
 import Testimonial from "../components/Testimonial";
 import Button from "../utils/Button";
 
@@ -51,6 +52,7 @@ function MainPage() {
         <Campaigns />
 
         {/* Information Section */}
+        <Information />
       </div>
     </>
   );
