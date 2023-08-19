@@ -1,3 +1,4 @@
+import Campaigns from "../components/Campaigns";
 import DetailsCompany from "../components/DetailsCompany";
 import Headers from "../components/Headers";
 import Testimonial from "../components/Testimonial";
@@ -39,11 +40,15 @@ function MainPage() {
             </div>
           </div>
         </div>
+
         {/* Details for company */}
         <DetailsCompany />
 
-        {/* Donar Testimonial */}
+        {/*Testimonial Section*/}
         <Testimonial />
+
+        {/* CAMPAIGNS Section */}
+        <Campaigns />
       </div>
     </>
   );

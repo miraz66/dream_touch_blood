@@ -1,5 +1,6 @@
 import TestimonyFeatImg from "../assets/testimonyFeatImg.jpg";
-import AutoSliderCard from "./AutoSliderCard";
+import AutoSlider from "../utils/AutoSlider";
+import TestimonialCardData from "../assets/TestimonialCardData";
 
 export default function Testimonial() {
   return (
@@ -11,12 +12,17 @@ export default function Testimonial() {
             <div className=""></div>
             <hr className="mx-auto w-16 md:w-28 bg-white my-3" />
             <h2 className="text-3xl md:text-5xl pb-10 font-medium">
-              JOIN WITH US AND SAVE LIFE
+              JOIN WITH US AND SAVE LIFE CAMPAIGNS
             </h2>
           </div>
           <div className="lg:flex lg:justify-between">
             <div className="lg:w-1/2 bg-white max-lg:pb-10">
-              <AutoSliderCard />
+              {/* <AutoSliderCard /> */}
+
+              <AutoSlider
+                cardsData={TestimonialCardData}
+                css="h-[26rem] md:h-[30rem] mt-4"
+              />
             </div>
 
             <div className="lg:w-1/2 hidden lg:block">

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import TestimonialCard from "./test/TestimonialCard";
-import cardsData from "../assets/TestimonialData";
+import PropTypes from "prop-types";
 
-function AutoSliderCard() {
+function AutoSlider({ cardsData, css }) {
   const [people] = useState(cardsData);
   const [index, setIndex] = useState(0);
 
@@ -26,9 +25,8 @@ function AutoSliderCard() {
 
   return (
     <>
-      <div className="mt-4 relative flex overflow-hidden h-[30rem]">
+      <div className={`relative flex overflow-hidden ${css}`}>
         {people.map((person, personIndex) => {
-          const { id, image, name, paragraph, address, title } = person;
           let position = " translate-x-full";
           if (personIndex === index) {
             position = " opacity-95 translate-x-0";
@@ -41,16 +39,10 @@ function AutoSliderCard() {
           }
           return (
             <article
-              key={id}
+              key={person.id}
               className={`absolute opacity-0 ease-linear duration-500 ${position}`}
             >
-              <TestimonialCard
-                name={name}
-                image={image}
-                pra={paragraph}
-                header={title}
-                address={address}
-              />
+              {person.content}
             </article>
           );
         })}
@@ -108,4 +100,9 @@ function AutoSliderCard() {
   );
 }
 
-export default AutoSliderCard;
+AutoSlider.propTypes = {
+  cardsData: PropTypes.array.isRequired,
+  css: PropTypes.string.isRequired,
+};
+
+export default AutoSlider;

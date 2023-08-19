@@ -8,7 +8,7 @@ export default function TestimonialCard({ header, pra, name, image, address }) {
           <h2 className="pb-10 text-3xl md:text-4xl text-red-600 font-semibold uppercase">
             {header}
           </h2>
-          <p className="text-gray-700 pb-20">{pra}</p>
+          <p className="text-gray-700 pb-10 md:pb-20">{pra}</p>
 
           <div className="">
             <img
