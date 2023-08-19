@@ -34,7 +34,7 @@ export default function CampainCard({
 
             {date}
           </h6>
-          <h3>{title}</h3>
+          <h3 className="text-2xl">{title}</h3>
           <p>{paragraph}</p>
           <div className="">
             <h6>
