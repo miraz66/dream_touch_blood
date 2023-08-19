@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import MainPage from "./pages/MainPage";
 import Login from "./components/Login";
-import NotFound from "./components/NotFound";
+// import NotFound from "./components/NotFound";
 
 // amimation library //
 import AOS from "aos";
@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/mainpage" element={<MainPage />} />
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

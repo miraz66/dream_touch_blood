@@ -10,7 +10,7 @@ export default function CampainCard({
 }) {
   return (
     <>
-      <div className="flex bg-gray-200">
+      <div className="flex bg-gray-100">
         <div
           className={"w-1/3 bg-no-repeat bg-center bg-cover " + images}
         ></div>
@@ -44,7 +44,7 @@ export default function CampainCard({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5 bg-red-600"
+                className="w-5 h-5 text-red-600"
               >
                 <path
                   strokeLinecap="round"
@@ -62,7 +62,7 @@ export default function CampainCard({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5 bg-red-600"
+                className="w-5 h-5 text-red-600"
               >
                 <path
                   strokeLinecap="round"
