@@ -49,6 +49,8 @@ function MainPage() {
 
         {/* CAMPAIGNS Section */}
         <Campaigns />
+
+        {/* Information Section */}
       </div>
     </>
   );

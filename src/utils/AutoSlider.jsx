@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-function AutoSlider({ cardsData, css }) {
+function AutoSlider({ cardsData, css, buttonCss, dotsCss }) {
   const [people] = useState(cardsData);
   const [index, setIndex] = useState(0);
 
@@ -47,7 +47,7 @@ function AutoSlider({ cardsData, css }) {
           );
         })}
 
-        <div className="hidden">
+        <div className={buttonCss}>
           <button
             className="absolute top-[200px] translate-x-1/2 grid place-items-center ease-in-out duration-200 left-0"
             onClick={() => setIndex(index - 1)}
@@ -85,7 +85,7 @@ function AutoSlider({ cardsData, css }) {
         </div>
       </div>
 
-      <div className="ml-5 md:ml-16 mt-4 flex justify-start">
+      <div className={`ml-5 md:ml-16 mt-4 ${dotsCss}`}>
         {people.map((_, i) => (
           <button
             key={i}
@@ -103,6 +103,8 @@ function AutoSlider({ cardsData, css }) {
 AutoSlider.propTypes = {
   cardsData: PropTypes.array.isRequired,
   css: PropTypes.string.isRequired,
+  buttonCss: PropTypes.string.isRequired,
+  dotsCss: PropTypes.string.isRequired,
 };
 
 export default AutoSlider;

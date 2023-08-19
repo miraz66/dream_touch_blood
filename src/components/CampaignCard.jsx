@@ -10,13 +10,13 @@ export default function CampainCard({
 }) {
   return (
     <>
-      <div className="flex bg-gray-100">
+      <div className="flex bg-gray-100 hover:shadow-xl hover:shadow-gray-300 ease-out duration-300">
         <div
           className={"w-1/3 bg-no-repeat bg-center bg-cover " + images}
         ></div>
 
-        <div className="w-2/3">
-          <h6>
+        <div className="w-2/3 p-7">
+          <div className="flex font-serif gap-1 text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,19 +32,21 @@ export default function CampainCard({
               />
             </svg>
 
-            {date}
-          </h6>
-          <h3 className="text-2xl">{title}</h3>
-          <p>{paragraph}</p>
-          <div className="">
-            <h6>
+            <p>{date}</p>
+          </div>
+          <h3 className="text-2xl py-3">{title}</h3>
+
+          <p className="text-gray-700">{paragraph}</p>
+
+          <div className="flex gap-5 pt-5 text-gray-700">
+            <h6 className="flex gap-1 font-serif items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5 text-red-600"
+                className="w-4 h-4 text-red-600"
               >
                 <path
                   strokeLinecap="round"
@@ -55,24 +57,17 @@ export default function CampainCard({
 
               {time}
             </h6>
-            <h6>
+            <h6 className="flex gap-1 font-serif items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5 text-red-600"
+                fill="currentColor"
+                className="w-4 h-4 text-red-600"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  fillRule="evenodd"
+                  d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                  clipRule="evenodd"
                 />
               </svg>
 

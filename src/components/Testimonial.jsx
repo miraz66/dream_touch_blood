@@ -15,13 +15,13 @@ export default function Testimonial() {
               JOIN WITH US AND SAVE LIFE CAMPAIGNS
             </h2>
           </div>
-          <div className="lg:flex lg:justify-between">
+          <div className="lg:flex lg:justify-between hover:shadow-xl hover:shadow-gray-300 ease-out duration-300">
             <div className="lg:w-1/2 bg-white max-lg:pb-10">
-              {/* <AutoSliderCard /> */}
-
               <AutoSlider
                 cardsData={TestimonialCardData}
                 css="h-[26rem] md:h-[30rem] mt-4"
+                buttonCss="hidden"
+                dotsCss="ml-5 md:ml-16 mt-4 flex"
               />
             </div>
 
