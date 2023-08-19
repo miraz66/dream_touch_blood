@@ -4,8 +4,8 @@ function Information() {
   return (
     <>
       <div className="">
-        <div className=""></div>
-        <div className=""></div>
+        <div className="">hello</div>
+        <div className="">hello</div>
       </div>
     </>
   );
