@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 //----All Page---//
 import Home from "./pages/Home";
@@ -23,6 +24,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+
+      <ScrollToTopButton />
     </div>
   );
 }

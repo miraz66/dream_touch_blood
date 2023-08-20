@@ -71,3 +71,29 @@
 .next {
   right: 0;
 }
+
+/* Gallary Image hover effict */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  transition: 0.7s;
+  background-color: rgba(255, 0, 0, 0.103);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
