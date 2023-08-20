@@ -33,7 +33,7 @@ function ScrollToTopButton() {
     <button
       className={`${
         isVisible ? "block" : "hidden"
-      } fixed bottom-14 right-4 z-50 p-4 rounded-full bg-gradient-to-br from-teal-200 via-green-300 to-teal-200 text-white`}
+      } fixed bottom-14 right-4 z-50 p-3 rounded-full bg-gradient-to-br from-gray-500 via-red-600 to-gray-200 text-red-500`}
       onClick={scrollToTop}
     >
       <svg
@@ -42,7 +42,7 @@ function ScrollToTopButton() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-6 h-6"
+        className="w-7 h-7 text-white"
       >
         <path
           strokeLinecap="round"
