@@ -1,5 +1,5 @@
-import TestimonialCard from "../components/TestimonialCard";
-import UserPhoto from "./user_1.jpg";
+import TestimonialCard from "../../components/TestimonialCard";
+import UserPhoto from "../user_1.jpg";
 
 const TestimonialCardData = [
   {

@@ -1,4 +1,4 @@
-import CampaignCard from "../components/CampaignCard";
+import CampaignCard from "../../components/CampaignCard";
 
 const CampaignCardData = [
   {

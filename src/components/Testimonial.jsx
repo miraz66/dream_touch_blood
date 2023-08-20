@@ -1,6 +1,6 @@
 import TestimonyFeatImg from "../assets/testimonyFeatImg.jpg";
 import AutoSlider from "../utils/AutoSlider";
-import TestimonialCardData from "../assets/TestimonialCardData";
+import TestimonialCardData from "../assets/data/TestimonialCardData";
 
 export default function Testimonial() {
   return (

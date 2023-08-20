@@ -1,6 +1,6 @@
 import AutoSlider from "../utils/AutoSlider";
 import Button from "../utils/Button";
-import CampaignCardData from "../assets/CampaignCardData";
+import CampaignCardData from "../assets/data/CampaignCardData";
 
 function Campaigns() {
   return (

@@ -4,6 +4,7 @@ import Headers from "../components/Headers";
 import Information from "../components/Information";
 import Testimonial from "../components/Testimonial";
 import Button from "../utils/Button";
+import VolunteersCard from "../utils/VolunteersCard";
 
 function MainPage() {
   return (
@@ -53,6 +54,10 @@ function MainPage() {
 
         {/* Information Section */}
         <Information />
+
+        <div className="max-w-sm mx-auto bg-slate-300">
+          <VolunteersCard />
+        </div>
       </div>
     </>
   );
