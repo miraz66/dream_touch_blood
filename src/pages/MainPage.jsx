@@ -55,16 +55,16 @@ function MainPage() {
         <Campaigns />
 
         {/* Information Section */}
-        <Information />
+        {/* <Information /> */}
 
         {/* Volunteer Section */}
-        <VolunteerSection />
+        {/* <VolunteerSection /> */}
 
         {/* Gallary Section */}
-        <GallarySection />
+        {/* <GallarySection /> */}
 
         {/* Footer Section */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
