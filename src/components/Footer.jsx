@@ -28,12 +28,12 @@ function Footer() {
     <>
       <div className="bg-gray-900">
         <div className="max-w-7xl mx-3 md:mx-5 2xl:mx-auto">
-          <div className="flex gap-5 xl:gap-10 pt-20">
-            <h2 className="w-1/4 text-gray-300 lg:text-center font-bold text-3xl lg:text-3xl 2xl:text-5xl">
+          <div className="grid lg:grid-cols-3 gap-5 pt-20">
+            <h2 className="text-gray-300 lg:text-center font-bold text-3xl lg:text-3xl 2xl:text-5xl">
               <span className="text-red-600">Blood</span>{" "}
               <span className="font-serif">Donate</span>
             </h2>
-            <p className="w-3/4 text-gray-200">
+            <p className="col-span-2 text-sm lg:text-base text-gray-200">
               We are world largest and trustful blood donation center. We have
               been working since 1973 with a prestigious vision to helping
               patient to provide blood. We are working all over the world,
@@ -42,12 +42,12 @@ function Footer() {
             </p>
           </div>
 
-          <p className="my-16 h-[1px] bg-slate-500 w-full"></p>
+          <p className="my-10 lg:my-16 h-[1px] bg-slate-500 w-full"></p>
 
-          <div className="grid grid-cols-2 xl:grid-cols-4 lg:gap-10 xl:gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 md:gap-5 lg:gap-10 xl:gap-0">
             <div>
               <ul className="text-white">
-                <li className="pb-6 md:text-2xl lg:text-3xl text-gray-100">
+                <li className="pb-6 text-2xl lg:text-3xl text-gray-100">
                   CONTACT US
                 </li>
                 <li className="flex gap-5 pb-4 text-sm lg:text-base">
@@ -92,8 +92,10 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="xl:col-span-2 text-white">
-              <h3 className="pb-5 text-3xl text-gray-100">SUPPORT LINKS</h3>
+            <div className="xl:col-span-2 col-span-1 text-white">
+              <h3 className="pb-5 text-2xl lg:text-3xl text-gray-100">
+                SUPPORT LINKS
+              </h3>
               <div className="flex">
                 <ul className="w-1/2">
                   {supportLink.LinkNameFirst.map(({ name, link }, index) => (
@@ -137,8 +139,10 @@ function Footer() {
               </div>
             </div>
 
-            <div className="max-xl:col-span-2">
-              <h3 className="text-3xl text-gray-100 pb-5">SUBSCRIBE US</h3>
+            <div className="max-xl:col-span-2 max-md:col-span-1">
+              <h3 className="text-2xl lg:text-3xl text-gray-100 pb-5">
+                SUBSCRIBE US
+              </h3>
               <p className="pb-5 text-gray-200">
                 Signup for regular newsletter and stay up to date with our
                 latest news.
@@ -160,7 +164,7 @@ function Footer() {
         <p className="mt-14 h-[1px] bg-slate-600 w-full"></p>
 
         <div className="py-5">
-          <h6 className=" text-gray-500 text-center">
+          <h6 className="text-sm md:text-base text-gray-500 text-center">
             Copyright 2018 - Blood Donate by BlueWindLab. All Rights Reserved.
           </h6>
         </div>
