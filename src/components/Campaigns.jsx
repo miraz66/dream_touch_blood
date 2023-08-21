@@ -5,7 +5,7 @@ import CampaignCardData from "../assets/data/CampaignCardData";
 function Campaigns() {
   return (
     <>
-      <div className="max-w-7xl mx-auto py-24 flex">
+      <div className="max-w-7xl mx-auto pt-40 pb-24 flex">
         <div className="w-1/2 pr-10">
           <h2 className="text-4xl text-gray-700 font-semibold uppercase">
             OUR CAMPAIGNS

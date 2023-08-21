@@ -28,7 +28,7 @@ function Footer() {
     <>
       <div className="bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <div className="flex gap-10 pt-20 pb-10">
+          <div className="flex gap-10 pt-20">
             <h2 className="w-1/4 text-gray-300 lg:text-center font-bold text-3xl lg:text-4xl 2xl:text-5xl">
               <span className="text-red-600">Blood</span>{" "}
               <span className="font-serif">Donate</span>
@@ -41,8 +41,10 @@ function Footer() {
               people to donate blood.
             </p>
           </div>
-          <p className="h-[1px] bg-slate-400 w-full"></p>
-          <div className="py-16 flex gap-10">
+
+          <p className="my-16 h-[1px] bg-slate-500 w-full"></p>
+
+          <div className="flex gap-10">
             <div className="w-1/4">
               <ul className="text-white">
                 <li className="pb-6 text-3xl text-gray-100">CONTACT US</li>
@@ -151,6 +153,14 @@ function Footer() {
               </form>
             </div>
           </div>
+        </div>
+
+        <p className="mt-14 h-[1px] bg-slate-600 w-full"></p>
+
+        <div className="py-5">
+          <h6 className=" text-gray-500 text-center">
+            Copyright 2018 - Blood Donate by BlueWindLab. All Rights Reserved.
+          </h6>
         </div>
       </div>
     </>
