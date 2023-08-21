@@ -94,10 +94,13 @@ function Footer() {
                 <ul className="w-1/2">
                   {supportLink.LinkNameFirst.map(({ name, link }, index) => (
                     <li
-                      className="pb-2 text-gray-200 flex gap-3 items-center"
+                      className="pb-3 text-gray-200 flex gap-3 items-center"
                       key={index}
                     >
-                      <FontAwesomeIcon icon={faCaretRight}></FontAwesomeIcon>
+                      <FontAwesomeIcon
+                        className="text-red-500"
+                        icon={faCaretRight}
+                      ></FontAwesomeIcon>
                       <a
                         className="text-lg hover:text-red-500 ease-in-out duration-300"
                         href={link}
@@ -107,18 +110,46 @@ function Footer() {
                     </li>
                   ))}
                 </ul>
+
                 <ul className="w-1/2">
                   {supportLink.LinkNameSecond.map(({ name, link }, index) => (
-                    <li key={index}>
-                      <FontAwesomeIcon icon={faCaretRight}></FontAwesomeIcon>
-                      <a href={link}>{name}</a>
+                    <li
+                      className="pb-3 text-gray-200 flex gap-3 items-center"
+                      key={index}
+                    >
+                      <FontAwesomeIcon
+                        className="text-red-500"
+                        icon={faCaretRight}
+                      ></FontAwesomeIcon>
+                      <a
+                        className="text-lg hover:text-red-500 ease-in-out duration-300"
+                        href={link}
+                      >
+                        {name}
+                      </a>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
 
-            <div className="w-1/4"></div>
+            <div className="w-1/4">
+              <h3 className="text-3xl text-gray-100 pb-5">SUBSCRIBE US</h3>
+              <p className="pb-5 text-gray-200">
+                Signup for regular newsletter and stay up to date with our
+                latest news.
+              </p>
+              <form action="">
+                <input
+                  className="h-12 pl-3"
+                  type="text"
+                  placeholder="Enter Your Email"
+                />
+                <button className="px-5 py-2 bg-red-600 uppercase">
+                  Subscribe Now
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
