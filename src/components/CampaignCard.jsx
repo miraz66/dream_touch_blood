@@ -10,12 +10,15 @@ export default function CampainCard({
 }) {
   return (
     <>
-      <div className="flex bg-gray-100 hover:shadow-xl hover:shadow-gray-300 ease-out duration-300">
+      <div className="flex flex-wrap bg-gray-100 hover:shadow-xl hover:shadow-gray-300 ease-out duration-300">
         <div
-          className={"w-1/3 bg-no-repeat bg-center bg-cover " + images}
+          className={
+            "w-full max-md:h-60 md:w-1/3 bg-no-repeat bg-center bg-cover " +
+            images
+          }
         ></div>
 
-        <div className="w-2/3 p-7">
+        <div className="md:w-2/3 p-7">
           <div className="flex font-serif gap-1 text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,9 +39,9 @@ export default function CampainCard({
           </div>
           <h3 className="text-2xl py-3">{title}</h3>
 
-          <p className="text-gray-700">{paragraph}</p>
+          <p className="text-sm md:text-base text-gray-700">{paragraph}</p>
 
-          <div className="flex gap-5 pt-5 text-gray-700">
+          <div className="flex gap-1 md:gap-5 flex-wrap pt-5 text-gray-700 ">
             <h6 className="flex gap-1 font-serif items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
