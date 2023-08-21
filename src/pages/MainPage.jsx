@@ -55,7 +55,7 @@ function MainPage() {
         <Campaigns />
 
         {/* Information Section */}
-        {/* <Information /> */}
+        <Information />
 
         {/* Volunteer Section */}
         {/* <VolunteerSection /> */}

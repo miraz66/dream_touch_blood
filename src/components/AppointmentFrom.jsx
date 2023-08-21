@@ -2,13 +2,13 @@ export default function AppointmentFrom() {
   return (
     <>
       {" "}
-      <div className="w-full -mt-80 bg-gray-200 rounded shadow-md hover:shadow-xl hover:shadow-gray-400 ease-in-out duration-300">
+      <div className="w-full lg:-mt-80 bg-gray-200 rounded shadow-md hover:shadow-xl hover:shadow-gray-400 ease-in-out duration-300">
         <h2 className="mb-4 py-8 text-3xl text-center font-bold text-white bg-neutral-600 uppercase">
           REQUEST APPOINTMENT
         </h2>
         <form className="p-6">
-          <div className="mb-4 flex gap-3">
-            <div className="w-1/2">
+          <div className="mb-4 flex gap-3 max-md:flex-wrap">
+            <div className="md:w-1/2">
               <label htmlFor="name" className="block text-sm font-medium mb-1">
                 Name
               </label>
@@ -19,7 +19,7 @@ export default function AppointmentFrom() {
               />
             </div>
 
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <label htmlFor="email" className="block text-sm font-medium mb-1">
                 Email
               </label>
