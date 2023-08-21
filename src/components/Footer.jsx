@@ -41,8 +41,8 @@ function Footer() {
               people to donate blood.
             </p>
           </div>
-          <p className="h-[1px] bg-slate-300 w-full"></p>
-          <div className="py-10 flex gap-10">
+          <p className="h-[1px] bg-slate-400 w-full"></p>
+          <div className="py-16 flex gap-10">
             <div className="w-1/4">
               <ul className="text-white">
                 <li className="pb-6 text-3xl text-gray-100">CONTACT US</li>
@@ -141,11 +141,11 @@ function Footer() {
               </p>
               <form action="">
                 <input
-                  className="h-12 pl-3"
+                  className="h-12 pl-3 bg-gray-20 rounded-sm"
                   type="text"
                   placeholder="Enter Your Email"
                 />
-                <button className="px-5 py-2 bg-red-600 uppercase">
+                <button className="mt-3 px-5 py-2 bg-red-600 uppercase rounded-sm hover:bg-gray-400 ease-in-out duration-300">
                   Subscribe Now
                 </button>
               </form>
