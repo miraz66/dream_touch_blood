@@ -44,11 +44,13 @@ function Footer() {
 
           <p className="my-16 h-[1px] bg-slate-500 w-full"></p>
 
-          <div className="flex gap-10">
-            <div className="w-1/4">
+          <div className="grid grid-cols-2 xl:grid-cols-4 lg:gap-10 xl:gap-0">
+            <div>
               <ul className="text-white">
-                <li className="pb-6 text-3xl text-gray-100">CONTACT US</li>
-                <li className="flex gap-5 pb-4">
+                <li className="pb-6 md:text-2xl lg:text-3xl text-gray-100">
+                  CONTACT US
+                </li>
+                <li className="flex gap-5 pb-4 text-sm lg:text-base">
                   <FontAwesomeIcon
                     className="text-red-600 pt-1"
                     icon={faEnvelope}
@@ -68,7 +70,7 @@ function Footer() {
                     </a>
                   </div>
                 </li>
-                <li className="flex gap-5 pb-4">
+                <li className="flex gap-5 pb-4 text-sm lg:text-base">
                   <FontAwesomeIcon
                     className="text-red-600 pt-1"
                     icon={faLocationArrow}
@@ -77,7 +79,7 @@ function Footer() {
                     Road-2,3/A East Khulna Khulna-3100, Bangladesh
                   </p>
                 </li>
-                <li className="flex gap-5">
+                <li className="flex gap-5 text-sm lg:text-base">
                   <FontAwesomeIcon
                     className="text-red-600 pt-1"
                     icon={faPhone}
@@ -90,7 +92,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="w-2/4 text-white">
+            <div className="xl:col-span-2 text-white">
               <h3 className="pb-5 text-3xl text-gray-100">SUPPORT LINKS</h3>
               <div className="flex">
                 <ul className="w-1/2">
@@ -104,7 +106,7 @@ function Footer() {
                         icon={faCaretRight}
                       ></FontAwesomeIcon>
                       <a
-                        className="text-lg hover:text-red-500 ease-in-out duration-300"
+                        className="text-sm lg:text-lg hover:text-red-500 ease-in-out duration-300"
                         href={link}
                       >
                         {name}
@@ -113,7 +115,7 @@ function Footer() {
                   ))}
                 </ul>
 
-                <ul className="w-1/2">
+                <ul>
                   {supportLink.LinkNameSecond.map(({ name, link }, index) => (
                     <li
                       className="pb-3 text-gray-200 flex gap-3 items-center"
@@ -124,7 +126,7 @@ function Footer() {
                         icon={faCaretRight}
                       ></FontAwesomeIcon>
                       <a
-                        className="text-lg hover:text-red-500 ease-in-out duration-300"
+                        className="text-sm lg:text-lg hover:text-red-500 ease-in-out duration-300"
                         href={link}
                       >
                         {name}
@@ -135,7 +137,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="w-1/4">
+            <div className="max-xl:col-span-2">
               <h3 className="text-3xl text-gray-100 pb-5">SUBSCRIBE US</h3>
               <p className="pb-5 text-gray-200">
                 Signup for regular newsletter and stay up to date with our
