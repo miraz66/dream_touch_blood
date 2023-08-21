@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function TestimonialCard({ header, pra, name, image, address }) {
   return (
     <>
-      <div className="mt-10 mx-5 md:mx-16">
+      <div className="mt-10 mx-5 xl:mx-16">
         <div>
           <h2 className="pb-10 text-3xl md:text-4xl text-red-600 font-semibold uppercase">
             {header}

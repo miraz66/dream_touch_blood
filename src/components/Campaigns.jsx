@@ -24,7 +24,7 @@ function Campaigns() {
         <div className="w-full lg:w-1/2">
           <AutoSlider
             cardsData={CampaignCardData}
-            css="h-[36rem] md:h-[21rem]"
+            css="h-[34rem] md:h-[21rem]"
             buttonCss="hidden"
             dotsCss="ml-5 md:ml-16 mt-4 flex justify-center"
           />

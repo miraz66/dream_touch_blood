@@ -6,7 +6,7 @@ export default function Testimonial() {
   return (
     <>
       <div className="bg-no-repeat bg-center bg-cover bg-[url('assets/testimony_feat_bg.jpg')]">
-        <div className="max-w-6xl lg:mx-16 2xl:mx-auto py-20">
+        <div className="max-w-6xl lg:mx-16 2xl:mx-auto md:py-20">
           <div className="py-10 text-white text-center">
             <h5 className="md:text-xl">Awesome Words From Members</h5>
             <div className=""></div>
@@ -15,7 +15,7 @@ export default function Testimonial() {
               JOIN WITH US AND SAVE LIFE CAMPAIGNS
             </h2>
           </div>
-          <div className="lg:flex lg:justify-between hover:shadow-xl hover:shadow-gray-300 ease-out duration-300">
+          <div className="lg:flex lg:justify-between hover:shadow-xl lg:hover:shadow-gray-300 ease-out duration-300">
             <div className="lg:w-1/2 bg-white max-lg:pb-10">
               <AutoSlider
                 cardsData={TestimonialCardData}

@@ -10,10 +10,10 @@ export default function CampainCard({
 }) {
   return (
     <>
-      <div className="flex flex-wrap bg-gray-100 hover:shadow-xl hover:shadow-gray-300 ease-out duration-300">
+      <div className="flex flex-wrap bg-gray-100 max-md:rounded-md hover:shadow-xl md:hover:shadow-gray-300 ease-out duration-300">
         <div
           className={
-            "w-full max-md:h-60 md:w-1/3 bg-no-repeat bg-center bg-cover " +
+            "w-full max-md:h-56 md:w-1/3 bg-no-repeat bg-center bg-cover " +
             images
           }
         ></div>
