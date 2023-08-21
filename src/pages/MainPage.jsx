@@ -58,10 +58,10 @@ function MainPage() {
         <Information />
 
         {/* Volunteer Section */}
-        {/* <VolunteerSection /> */}
+        <VolunteerSection />
 
         {/* Gallary Section */}
-        {/* <GallarySection /> */}
+        <GallarySection />
 
         {/* Footer Section */}
         {/* <Footer /> */}

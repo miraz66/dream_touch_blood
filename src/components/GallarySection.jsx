@@ -22,15 +22,17 @@ const gallaryImages = [
 export default function GallarySection() {
   return (
     <>
-      <div className="max-w-7xl mx-auto py-20">
+      <div className="max-w-7xl mx-3 md:mx-5 2xl:mx-auto py-20">
         <div className="text-center">
-          <h3 className="text-gray-700 text-4xl font-bold">CAMPAIGN GALLERY</h3>
-          <p className="my-2 w-[2px] h-8 mx-auto bg-red-600"></p>
-          <h5 className="mb-10 text-xl text-gray-600 font-light">
+          <h3 className="text-gray-700 text-2xl md:text-4xl font-bold">
+            CAMPAIGN GALLERY
+          </h3>
+          <p className="my-2 w-[2px] h-6 md:h-8 mx-auto bg-red-600"></p>
+          <h5 className="mb-10 text-lg md:text-xl text-gray-600 font-light">
             our prestigious voluntary work on campaigns by the team
           </h5>
         </div>
-        <div className="grid grid-cols-4 grid-rows-2 gap-5">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-5">
           {gallaryImages.map((images, index) => (
             <div className="container relative" key={index}>
               <img className="h-64 w-full" src={images} alt="" />
@@ -53,11 +55,11 @@ export default function GallarySection() {
             </div>
           ))}
         </div>
-        <div className="w-10/12 py-10 mt-20 mx-auto bg-gray-100 text-center rounded-lg">
-          <h2 className="text-3xl pb-3 text-gray-600 font-bold">
+        <div className="2xl:w-10/12 py-10 mt-20 mx-auto bg-gray-100 text-center rounded-lg">
+          <h2 className="text-2xl md:text-3xl pb-3 text-gray-600 font-bold">
             Become A Part Of Great Work Today
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-sm md:text-base xl:text-lg text-gray-600">
             You can give blood at any of our blood donation venues all over the
             world. <br />
             We have total sixty thousands donor centers and visit thousands of
@@ -66,7 +68,7 @@ export default function GallarySection() {
           <div className="flex justify-center mt-5">
             <Button
               name="Join with us"
-              css="px-8 py-3 bg-red-600 text-xl font-bold text-white hover:bg-gray-700 ease-in-out duration-300"
+              css="px-8 py-3 bg-red-600 text-lg md:text-xl font-bold text-white hover:bg-gray-700 ease-in-out duration-300"
             />
           </div>
         </div>

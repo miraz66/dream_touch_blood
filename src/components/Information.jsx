@@ -12,7 +12,7 @@ import {
 function Information() {
   return (
     <>
-      <div className="bg-gray-50">
+      <div className="pb-20 bg-gray-50">
         <div className="h-[20rem] lg:h-[32rem] bg-no-repeat bg-center bg-cover bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url('assets/appointment_female_bg.jpg')]"></div>
         <div className="max-w-7xl md:mx-5 2xl:mx-auto">
           <div className="flex pt-16 lg:pt-24 pb-20 flex-wrap">

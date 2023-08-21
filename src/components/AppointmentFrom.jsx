@@ -1,7 +1,6 @@
 export default function AppointmentFrom() {
   return (
     <>
-      {" "}
       <div className="w-full lg:-mt-80 bg-gray-200 rounded shadow-md hover:shadow-xl hover:shadow-gray-400 ease-in-out duration-300">
         <h2 className="mb-4 py-8 text-3xl text-center font-bold text-white bg-neutral-600 uppercase">
           REQUEST APPOINTMENT
@@ -86,7 +85,7 @@ export default function AppointmentFrom() {
             </div>
           </div>
 
-          <div className="">
+          <div>
             <textarea
               className="w-full border pl-3 pt-2"
               name="Message"

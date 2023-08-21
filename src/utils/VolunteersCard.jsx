@@ -20,9 +20,9 @@ function VolunteersCard({
   return (
     <>
       <div
-        className={`shadow-md rounded-md hover:shadow-xl hover:-mt-1 ease-in-out duration-300 ${mainCss}`}
+        className={`max-lg:mb-10 shadow-md rounded-md hover:shadow-xl hover:-mt-1 ease-in-out duration-300 ${mainCss}`}
       >
-        <img className={imagesCss} src={images} alt={name} />
+        <img className={`w-full ${imagesCss}`} src={images} alt={name} />
         <div className="bg-gray-50 py-3 text-center">
           <h2
             className={`text-xl font-semibold text-gray-700 uppercase ${nameCss}`}
