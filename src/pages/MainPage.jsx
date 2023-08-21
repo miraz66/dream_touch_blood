@@ -12,7 +12,7 @@ function MainPage() {
   return (
     <>
       {/* --headers */}
-      <div className="fixed w-full bg-white bg-opacity-95 z-50">
+      <div className="fixed w-full bg-white bg-opacity-95 z-50 shadow">
         <Headers />
       </div>
 
