@@ -27,9 +27,9 @@ function Footer() {
   return (
     <>
       <div className="bg-gray-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex gap-10 pt-20">
-            <h2 className="w-1/4 text-gray-300 lg:text-center font-bold text-3xl lg:text-4xl 2xl:text-5xl">
+        <div className="max-w-7xl mx-3 md:mx-5 2xl:mx-auto">
+          <div className="flex gap-5 xl:gap-10 pt-20">
+            <h2 className="w-1/4 text-gray-300 lg:text-center font-bold text-3xl lg:text-3xl 2xl:text-5xl">
               <span className="text-red-600">Blood</span>{" "}
               <span className="font-serif">Donate</span>
             </h2>
@@ -143,7 +143,7 @@ function Footer() {
               </p>
               <form action="">
                 <input
-                  className="h-12 pl-3 bg-gray-20 rounded-sm"
+                  className="h-12 w-full pl-3 bg-gray-20 rounded-sm"
                   type="text"
                   placeholder="Enter Your Email"
                 />

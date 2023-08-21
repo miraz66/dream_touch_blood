@@ -64,7 +64,7 @@ function MainPage() {
         <GallarySection />
 
         {/* Footer Section */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
