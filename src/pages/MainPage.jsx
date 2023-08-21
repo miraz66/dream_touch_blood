@@ -6,6 +6,7 @@ import Testimonial from "../components/Testimonial";
 import Button from "../utils/Button";
 import VolunteerSection from "../components/VolunteerSection";
 import GallarySection from "../components/GallarySection";
+import Footer from "../components/Footer";
 
 function MainPage() {
   return (
@@ -61,6 +62,9 @@ function MainPage() {
 
         {/* Gallary Section */}
         <GallarySection />
+
+        {/* Footer Section */}
+        <Footer />
       </div>
     </>
   );
