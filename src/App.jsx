@@ -15,7 +15,7 @@ function App() {
   AOS.init();
 
   return (
-    <div className="font-Poppins">
+    <div className="font-Poppins overflow-hidden">
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home />} />
