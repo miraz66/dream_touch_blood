@@ -29,11 +29,11 @@ function Footer() {
       <div className="bg-gray-900">
         <div className="max-w-7xl mx-3 md:mx-5 2xl:mx-auto">
           <div className="grid lg:grid-cols-3 gap-5 pt-20">
-            <h2 className="text-gray-300 lg:text-center font-bold text-3xl lg:text-3xl 2xl:text-5xl">
+            <h2 className="text-gray-300 lg:text-center font-bold text-3xl lg:text-3xl 2xl:text-5xl animationLeft">
               <span className="text-red-600">Blood</span>{" "}
               <span className="font-serif">Donate</span>
             </h2>
-            <p className="col-span-2 text-sm lg:text-base text-gray-200">
+            <p className="col-span-2 text-sm lg:text-base text-gray-200 animationRight">
               We are world largest and trustful blood donation center. We have
               been working since 1973 with a prestigious vision to helping
               patient to provide blood. We are working all over the world,
@@ -46,7 +46,7 @@ function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 md:gap-5 lg:gap-10 xl:gap-0">
             <div>
-              <ul className="text-white">
+              <ul className="text-white animationUp">
                 <li className="pb-6 text-2xl lg:text-3xl text-gray-100">
                   CONTACT US
                 </li>
@@ -92,7 +92,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="xl:col-span-2 col-span-1 text-white">
+            <div className="xl:col-span-2 col-span-1 text-white animationUp">
               <h3 className="pb-5 text-2xl lg:text-3xl text-gray-100">
                 SUPPORT LINKS
               </h3>
@@ -139,7 +139,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="max-xl:col-span-2 max-md:col-span-1">
+            <div className="max-xl:col-span-2 max-md:col-span-1 animationUp">
               <h3 className="text-2xl lg:text-3xl text-gray-100 pb-5">
                 SUBSCRIBE US
               </h3>

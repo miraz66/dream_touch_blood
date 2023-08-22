@@ -11,25 +11,41 @@ const VolunteersData = [
         images={Team_9}
         name="ALEXANDER GARY"
         sureName="CO-FOUNDER"
+        mainCss="animation3D"
       />
     ),
   },
   {
     id: 2,
     content: (
-      <VolunteersCard images={Team_7} name="MELISSA MUNOZ" sureName="FOUNDER" />
+      <VolunteersCard
+        images={Team_7}
+        name="MELISSA MUNOZ"
+        sureName="FOUNDER"
+        mainCss="animation3D"
+      />
     ),
   },
   {
     id: 3,
     content: (
-      <VolunteersCard images={Team_6} name="JOHN ABRAHAM" sureName="FOUNDER" />
+      <VolunteersCard
+        images={Team_6}
+        name="JOHN ABRAHAM"
+        sureName="FOUNDER"
+        mainCss="animation3D"
+      />
     ),
   },
   {
     id: 3,
     content: (
-      <VolunteersCard images={Team_7} name="MELISSA MUNOZ" sureName="MANAGER" />
+      <VolunteersCard
+        images={Team_7}
+        name="MELISSA MUNOZ"
+        sureName="MANAGER"
+        mainCss="animation3D"
+      />
     ),
   },
 ];

@@ -34,7 +34,7 @@ export default function GallarySection() {
         </div>
         <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-5">
           {gallaryImages.map((images, index) => (
-            <div className="container relative" key={index}>
+            <div className="container relative animationUp" key={index}>
               <img className="h-64 w-full" src={images} alt="" />
               <div className="overlay flex justify-center items-center">
                 <svg

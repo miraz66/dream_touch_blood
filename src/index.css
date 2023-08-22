@@ -31,9 +31,14 @@
 }
 
 .animationPopUP {
-  transform: scale(0.1) rotate(380deg);
+  transform: scale(0.1);
   transition: 1s ease;
   opacity: 0;
+}
+
+.animation3D {
+  transform: rotate3d(0, 1, 0, 90deg);
+  transition: 1.2s ease;
 }
 
 .show {
@@ -43,6 +48,7 @@
   opacity: 1;
 }
 
+/* --------------------------------- */
 .blood-image {
   position: absolute;
   width: 30px; /* Adjust the size of the blood image as needed */
