@@ -25,7 +25,7 @@ function Information() {
                 Helpful Information
               </h2>
 
-              <ul className="text-sm xl:text-base max-lg:px-5 lg:pl-10 text-gray-600 list-disc marker:text-red-600">
+              <ul className="text-sm xl:text-base max-lg:px-5 lg:pl-10 text-gray-600 list-disc marker:text-red-600 animationUp">
                 <li>
                   Maintain a healthy iron level by eating iron rich foods.
                 </li>
@@ -41,7 +41,7 @@ function Information() {
             </div>
 
             {/* APPOINTMENT form */}
-            <div className="lg:w-1/2 px-3">
+            <div className="lg:w-1/2 px-3 animationUp">
               <AppointmentFrom />
             </div>
           </div>

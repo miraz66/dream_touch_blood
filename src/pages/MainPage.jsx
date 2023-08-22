@@ -1,4 +1,5 @@
 import Campaigns from "../components/Campaigns";
+import Animation from "../components/test/Animation";
 import DetailsCompany from "../components/DetailsCompany";
 import Headers from "../components/Headers";
 import Information from "../components/Information";
@@ -9,6 +10,9 @@ import GallarySection from "../components/GallarySection";
 import Footer from "../components/Footer";
 
 function MainPage() {
+  // for Animation
+  Animation();
+
   return (
     <>
       {/* --headers */}
@@ -19,7 +23,7 @@ function MainPage() {
       {/* -- homeContainer -- */}
       <div className="pt-24">
         <div className="bg-no-repeat bg-center bg-cover bg-[url('assets/home_1_slider_1.jpg')]">
-          <div className="max-w-7xl 2xl:mx-auto lg:mx-10 mx-3 py-20 lg:py-44">
+          <div className="max-w-7xl 2xl:mx-auto lg:mx-10 mx-3 py-20 lg:py-44 animationPopUP">
             <h4 className="text-white font-serif text-sm md:text-lg lg:text-xl xl:text-2xl">
               Donate blood save life !
             </h4>

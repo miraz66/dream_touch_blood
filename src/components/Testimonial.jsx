@@ -16,7 +16,7 @@ export default function Testimonial() {
             </h2>
           </div>
           <div className="lg:flex lg:justify-between hover:shadow-xl lg:hover:shadow-gray-300 ease-out duration-300">
-            <div className="lg:w-1/2 bg-white max-lg:pb-10">
+            <div className="lg:w-1/2 bg-white max-lg:pb-10 animationLeft">
               <AutoSlider
                 cardsData={TestimonialCardData}
                 css="h-[26rem] md:h-[30rem] mt-4"
@@ -25,7 +25,7 @@ export default function Testimonial() {
               />
             </div>
 
-            <div className="lg:w-1/2 hidden lg:block">
+            <div className="lg:w-1/2 hidden lg:block animationRight">
               <img
                 className="h-[37rem] w-full"
                 src={TestimonyFeatImg}
