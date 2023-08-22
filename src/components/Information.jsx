@@ -46,8 +46,8 @@ function Information() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-between gap-5 2xl:gap-10 px-5 animationUp boxTarget">
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-between gap-5 2xl:gap-10 px-5 boxTarget">
+            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
               <FontAwesomeIcon
                 className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
                 icon={faHeartbeat}
@@ -63,7 +63,7 @@ function Information() {
               </h4>
             </div>
 
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md">
+            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
               <FontAwesomeIcon
                 className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
                 icon={faStethoscope}
@@ -79,7 +79,7 @@ function Information() {
               </h4>
             </div>
 
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md">
+            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
               <FontAwesomeIcon
                 className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
                 icon={faUsers}
@@ -96,7 +96,7 @@ function Information() {
               </h4>
             </div>
 
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md">
+            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
               <FontAwesomeIcon
                 className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
                 icon={faBuilding}
@@ -113,7 +113,7 @@ function Information() {
               </h4>
             </div>
 
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md">
+            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
               <FontAwesomeIcon
                 className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
                 icon={faHeartCrack}
