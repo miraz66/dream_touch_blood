@@ -19,8 +19,6 @@ export default function Animation() {
 
         if (boxTop < triggerButton) {
           box.classList.add("show");
-        } else {
-          box.classList.remove("show");
         }
       });
 
@@ -29,8 +27,6 @@ export default function Animation() {
 
         if (boxTop < triggerButton) {
           box.classList.add("show");
-        } else {
-          box.classList.remove("show");
         }
       });
 
@@ -39,8 +35,6 @@ export default function Animation() {
 
         if (boxTop < triggerButton) {
           box.classList.add("show");
-        } else {
-          box.classList.remove("show");
         }
       });
 
@@ -49,8 +43,6 @@ export default function Animation() {
 
         if (boxTop < triggerButton) {
           box.classList.add("show");
-        } else {
-          box.classList.remove("show");
         }
       });
 
@@ -59,8 +51,6 @@ export default function Animation() {
 
         if (boxTop < triggerButton) {
           box.classList.add("show");
-        } else {
-          box.classList.remove("show");
         }
       });
 
@@ -69,8 +59,6 @@ export default function Animation() {
 
         if (boxTop < triggerButton) {
           box.classList.add("show");
-        } else {
-          box.classList.remove("show");
         }
       });
     }
