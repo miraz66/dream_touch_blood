@@ -5,7 +5,7 @@ export default function AllPageScreen({ name }) {
     <>
       <div className="h-80 bg-no-repeat bg-center bg-cover bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.9)),url('assets/header-bg.jpg')]">
         <div className="max-w-7xl mx-auto h-full text-white flex flex-col justify-center items-center">
-          <h2 className="text-4xl font-semibold uppercase tracking-widest">
+          <h2 className="pb-2 text-4xl font-semibold uppercase tracking-widest">
             {name}
           </h2>
           <div className="flex gap-2 text-lg font-semibold">

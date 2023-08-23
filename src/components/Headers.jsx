@@ -1,9 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import TestModal from "../utils/Modle";
-import UserProfileModel from "./UserProfileModel";
+import UserProfileModal from "./UserProfileModal";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -14,8 +12,6 @@ const navigation = [
 ];
 
 export default function Header() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <>
       <Disclosure as="nav" className="">
@@ -47,31 +43,9 @@ export default function Header() {
                   </div>
                 </div>
 
-                <div className="relative ml-10 lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-10 h-10 cursor-pointer hover:text-gray-700"
-                    onClick={() => setIsModalOpen(!isModalOpen)}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-
-                  {isModalOpen && (
-                    <TestModal
-                      css={"absolute top-14 right-0"}
-                      onClose={() => setIsModalOpen(!isModalOpen)}
-                    >
-                      <UserProfileModel />
-                    </TestModal>
-                  )}
+                {/* Open Profile */}
+                <div className="relative lg:hidden">
+                  <UserProfileModal />
                 </div>
 
                 <div
@@ -100,31 +74,9 @@ export default function Header() {
                     </div>
                   </div>
 
+                  {/* Open Profile */}
                   <div className="relative ml-10 max-lg:hidden">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-10 h-10 cursor-pointer hover:text-gray-700"
-                      onClick={() => setIsModalOpen(!isModalOpen)}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-
-                    {isModalOpen && (
-                      <TestModal
-                        css={"absolute top-14 right-0"}
-                        onClose={() => setIsModalOpen(!isModalOpen)}
-                      >
-                        <UserProfileModel />
-                      </TestModal>
-                    )}
+                    <UserProfileModal />
                   </div>
                 </div>
               </div>
