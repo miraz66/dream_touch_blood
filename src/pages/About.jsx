@@ -10,14 +10,19 @@ function About() {
 
         {/* ----About Home---- */}
         <div className="h-80 bg-no-repeat bg-center bg-cover bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.9)),url('assets/header-bg.jpg')]">
-          <div className="max-w-7xl mx-auto h-full text-3xl font-semibold text-white flex justify-center items-center">
-            <a
-              className="hover:border-b hover:border-red-600 ease-in-out duration-300"
-              href="/"
-            >
-              Home
-            </a>
-            <h2>/ About us</h2>
+          <div className="max-w-7xl mx-auto h-full text-white flex flex-col justify-center items-center">
+            <h2 className="text-4xl font-semibold uppercase tracking-widest">
+              About us
+            </h2>
+            <div className="flex gap-2 text-lg font-semibold">
+              <a
+                className="after:content-[' '] after:bg-red-500 after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer"
+                href="/"
+              >
+                Home
+              </a>
+              <h2> / About us</h2>
+            </div>
           </div>
         </div>
 
