@@ -1,13 +1,6 @@
 import AppointmentFrom from "./AppointmentFrom";
-import Counter from "../utils/CountNumber";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeartbeat,
-  faStethoscope,
-  faUsers,
-  faBuilding,
-  faHeartCrack,
-} from "@fortawesome/free-solid-svg-icons";
+import CounterCard from "./CounterCard";
+import CounterCardData from "../assets/data/CounterCardData";
 
 function Information() {
   return (
@@ -46,89 +39,16 @@ function Information() {
             </div>
           </div>
 
+          {/* Counter Card */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-between gap-5 2xl:gap-10 px-5 boxTarget">
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
-              <FontAwesomeIcon
-                className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
-                icon={faHeartbeat}
-              ></FontAwesomeIcon>
-              <Counter
-                startValue={0}
-                endValue={1360}
-                duration={20000}
-                css="pt-5 text-3xl text-red-600 font-semibold font-serif"
+            {CounterCardData.map(({ id, name, icon, counterCard }) => (
+              <CounterCard
+                key={id}
+                name={name}
+                icon={icon}
+                countent={counterCard}
               />
-              <h4 className="pt-1 text-xl font-semibold font-serif text-gray-700 hover:text-gray-800">
-                Success Smile
-              </h4>
-            </div>
-
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
-              <FontAwesomeIcon
-                className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
-                icon={faStethoscope}
-              ></FontAwesomeIcon>
-              <Counter
-                startValue={0}
-                endValue={1510}
-                duration={20000}
-                css="pt-5 text-3xl text-red-600 font-semibold font-serif"
-              />
-              <h4 className="pt-1 text-xl font-semibold font-serif text-gray-700 hover:text-gray-800">
-                Happy Donors
-              </h4>
-            </div>
-
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
-              <FontAwesomeIcon
-                className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
-                icon={faUsers}
-              ></FontAwesomeIcon>
-
-              <Counter
-                startValue={0}
-                endValue={2850}
-                duration={20000}
-                css="pt-5 text-3xl text-red-600 font-semibold font-serif"
-              />
-              <h4 className="pt-1 text-xl font-semibold font-serif text-gray-700 hover:text-gray-800">
-                Happy Recipient
-              </h4>
-            </div>
-
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
-              <FontAwesomeIcon
-                className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
-                icon={faBuilding}
-              ></FontAwesomeIcon>
-
-              <Counter
-                startValue={0}
-                endValue={3260}
-                duration={20000}
-                css="pt-5 text-3xl text-red-600 font-semibold font-serif"
-              />
-              <h4 className="pt-1 text-xl font-semibold font-serif text-gray-700 hover:text-gray-800">
-                Total Awards
-              </h4>
-            </div>
-
-            <div className="py-10 flex flex-col items-center text-center bg-white shadow hover:shadow-xl ease-in-out duration-300 rounded-md animationUp">
-              <FontAwesomeIcon
-                className="w-10 h-10 hover:text-red-600 ease-in-out duration-300"
-                icon={faHeartCrack}
-              ></FontAwesomeIcon>
-
-              <Counter
-                startValue={0}
-                endValue={600}
-                duration={20000}
-                css="pt-5 text-3xl text-red-600 font-semibold font-serif"
-              />
-              <h4 className="pt-1 text-xl font-semibold font-serif text-gray-700 hover:text-gray-800">
-                Bad Smile
-              </h4>
-            </div>
+            ))}
           </div>
         </div>
       </div>

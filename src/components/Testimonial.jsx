@@ -12,7 +12,7 @@ export default function Testimonial() {
             <div className=""></div>
             <hr className="mx-auto w-16 md:w-28 bg-white my-3" />
             <h2 className="text-3xl md:text-5xl pb-10 font-medium">
-              JOIN WITH US AND SAVE LIFE CAMPAIGNS
+              JOIN WITH US AND SAVE LIFE
             </h2>
           </div>
           <div className="lg:flex lg:justify-between hover:shadow-xl lg:hover:shadow-gray-300 ease-out duration-300">
