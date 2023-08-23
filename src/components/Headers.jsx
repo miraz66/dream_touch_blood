@@ -89,7 +89,7 @@ export default function Header() {
                               "px-3 font-medium" +
                               (!isActive
                                 ? "after:content-[' '] after:bg-red-500 after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer xl:text-lg"
-                                : "cursor-pointer border-b-2 border-red-600")
+                                : "cursor-pointer border-b-2 border-red-600 xl:text-lg")
                             );
                           }}
                           aria-current={item.current ? "page" : undefined}

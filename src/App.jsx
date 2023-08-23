@@ -6,13 +6,13 @@ import Home from "./pages/Home";
 import MainPage from "./pages/MainPage";
 import Login from "./components/Login";
 import NotFound from "./components/NotFound";
+import About from "./pages/About";
 
 // amimation library //
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Animation from "./components/Animation";
 
 function App() {
-  AOS.init();
+  Animation();
 
   return (
     <div className="font-Poppins overflow-hidden">
@@ -21,6 +21,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<MainPage />} />
+          <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

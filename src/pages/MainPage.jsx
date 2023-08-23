@@ -1,6 +1,5 @@
 import HomeCard from "../components/HomeCard";
 import Campaigns from "../components/Campaigns";
-import Animation from "../components/Animation";
 import DetailsCompany from "../components/DetailsCompany";
 import Headers from "../components/Headers";
 import Information from "../components/Information";
@@ -10,9 +9,6 @@ import GallarySection from "../components/GallarySection";
 import Footer from "../components/Footer";
 
 function MainPage() {
-  // for Animation
-  Animation();
-
   return (
     <>
       {/* --headers */}
