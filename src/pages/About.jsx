@@ -1,5 +1,6 @@
 import DetailsCompany from "../components/DetailsCompany";
 import Header from "../components/Headers";
+import VolunteerSection from "../components/VolunteerSection";
 
 function About() {
   return (
@@ -28,6 +29,9 @@ function About() {
 
         {/* Details for company */}
         <DetailsCompany />
+
+        {/* Volunteer Section */}
+        <VolunteerSection />
       </div>
     </>
   );
