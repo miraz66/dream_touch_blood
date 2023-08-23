@@ -33,7 +33,7 @@ function ScrollToTopButton() {
     <button
       className={`${
         isVisible ? "block" : "hidden"
-      } fixed bottom-14 right-4 z-50 p-3 rounded-full bg-gradient-to-br from-gray-500 via-red-600 to-gray-200 text-red-500`}
+      } fixed bottom-14 right-4 z-50 p-3 rounded-full bg-gradient-to-br from-red-300 via-red-600 to-red-200 text-red-500`}
       onClick={scrollToTop}
     >
       <svg
