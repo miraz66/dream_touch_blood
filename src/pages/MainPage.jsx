@@ -8,7 +8,12 @@ import VolunteerSection from "../components/VolunteerSection";
 import GallarySection from "../components/GallarySection";
 import Footer from "../components/Footer";
 
+import Animation from "../components/Animation";
+
 function MainPage() {
+  // amimation library //
+  Animation();
+
   return (
     <>
       {/* --headers */}

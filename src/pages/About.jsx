@@ -5,12 +5,17 @@ import CounterCard from "../components/CounterCard";
 import CounterCardData from "../assets/data/CounterCardData";
 import Testimonial from "../components/Testimonial";
 
+import Animation from "../components/Animation";
+
 // images
 import separator from "../assets/separator.png";
 import Button from "../utils/Button";
 import Footer from "../components/Footer";
 
 function About() {
+  // amimation library //
+  Animation();
+
   return (
     <>
       <div className="">

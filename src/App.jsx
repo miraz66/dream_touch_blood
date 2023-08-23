@@ -8,12 +8,7 @@ import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 import About from "./pages/About";
 
-// amimation library //
-import Animation from "./components/Animation";
-
 function App() {
-  Animation();
-
   return (
     <div className="font-Poppins overflow-hidden">
       <BrowserRouter>
