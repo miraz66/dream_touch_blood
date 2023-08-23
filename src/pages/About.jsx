@@ -6,7 +6,7 @@ import CounterCardData from "../assets/data/CounterCardData";
 import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
 import AllPageScreen from "../components/AllPageScreen";
-import Animation from "../components/Animation";
+import Animation from "../utils/Animation";
 
 // images
 import separator from "../assets/separator.png";

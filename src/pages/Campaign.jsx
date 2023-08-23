@@ -2,8 +2,14 @@ import AllPageScreen from "../components/AllPageScreen";
 import Header from "../components/Headers";
 import CampaignCardData from "../assets/data/CampaignCardData";
 import HelpingSection from "../components/HelpingSection";
+import Footer from "../components/Footer";
+
+// Animation
+import Animaton from "../utils/Animation";
 
 function Campaign() {
+  Animaton();
+
   return (
     <>
       {/* header section */}
@@ -26,15 +32,24 @@ function Campaign() {
           </p>
           <div className="grid grid-cols-2 gap-10 pt-16">
             {CampaignCardData.map(({ id, content }) => (
-              <div key={id}>{content}</div>
+              <div className="animationUp" key={id}>
+                {content}
+              </div>
             ))}
           </div>
         </div>
       </div>
 
+      {/* Helping Section */}
       <div className="bg-red-50 py-20">
         <HelpingSection css={"lg:grid grid-cols-3 gap-14"} />
       </div>
+
+      {/* Sponsors Section */}
+      <div className=""></div>
+
+      {/* Footer Section */}
+      <Footer />
     </>
   );
 }
