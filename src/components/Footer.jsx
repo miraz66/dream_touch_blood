@@ -46,7 +46,7 @@ function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 md:gap-5 lg:gap-10 xl:gap-0">
             <div>
-              <ul className="text-white animationUp">
+              <ul className="text-white">
                 <li className="pb-6 text-2xl lg:text-3xl text-gray-100">
                   CONTACT US
                 </li>
@@ -92,7 +92,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="xl:col-span-2 col-span-1 text-white animationUp">
+            <div className="xl:col-span-2 col-span-1 text-white">
               <h3 className="pb-5 text-2xl lg:text-3xl text-gray-100">
                 SUPPORT LINKS
               </h3>
@@ -139,7 +139,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="max-xl:col-span-2 max-md:col-span-1 animationUp">
+            <div className="max-xl:col-span-2 max-md:col-span-1">
               <h3 className="text-2xl lg:text-3xl text-gray-100 pb-5">
                 SUBSCRIBE US
               </h3>
