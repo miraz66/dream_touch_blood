@@ -84,7 +84,6 @@ export default function Header() {
                         <NavLink
                           key={item.name}
                           to={item.href}
-                          onClick={() => window.reload()}
                           className={({ isActive }) => {
                             return (
                               "px-3 font-medium" +
