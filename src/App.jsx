@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 import About from "./pages/About";
 import Campaign from "./pages/Campaign";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,9 +17,13 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
+
           <Route path="/" element={<MainPage />} />
           <Route path="/About" element={<About />} />
           <Route path="/campaign" element={<Campaign />} />
+          <Route path="/campaign" element={<Campaign />} />
+          <Route path="/contact" element={<Contact />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -3,6 +3,7 @@ import Header from "../components/Headers";
 import CampaignCardData from "../assets/data/CampaignCardData";
 import HelpingSection from "../components/HelpingSection";
 import Footer from "../components/Footer";
+import SponsorsData from "../assets/data/SponsorsData";
 
 // Animation
 import Animaton from "../utils/Animation";
@@ -46,8 +47,20 @@ function Campaign() {
       </div>
 
       {/* Sponsors Section */}
-      <div className=""></div>
-
+      <div className="bg-gray-100 py-20">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-gray-600 text-5xl font-semibold">Our Sponsors</h1>
+          <p className="h-8 w-0.5 mx-auto bg-red-500"></p>
+          <p className="text-xl tracking-wider pb-16">
+            The sponsors who give their valuable amount to fulfill our mission.
+          </p>
+          <div className="grid grid-cols-8 gap-5">
+            {SponsorsData.map(({ id, content }) => (
+              <div key={id}>{content}</div>
+            ))}
+          </div>
+        </div>
+      </div>
       {/* Footer Section */}
       <Footer />
     </>
