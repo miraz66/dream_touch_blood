@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function UserProfileModel() {
   const navigate = useNavigate();
   return (
-    <div className="w-40 flex items-center flex-col">
+    <div className="w-52 rounded-md bg-white p-6 flex items-center flex-col">
       <div className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"

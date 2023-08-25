@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "../utils/Modal";
+import VideoPlayer from "./test/VideoPlayer2";
 
 function DetailsCompany() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -50,8 +51,10 @@ function DetailsCompany() {
       {isModalOpen && (
         <Modal
           onClose={() => setIsModalOpen(!isModalOpen)}
-          css="fixed inset-0 flex justify-center items-center bg-opacity-50 bg-gray-900"
-        ></Modal>
+          css="fixed inset-0 flex justify-center items-center bg-opacity-70 bg-gray-900 z-50"
+        >
+          <VideoPlayer src="https://www.youtube.com/embed/aqz-KE-bpKQ" />
+        </Modal>
       )}
     </>
   );

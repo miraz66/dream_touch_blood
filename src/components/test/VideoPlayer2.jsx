@@ -1,10 +1,10 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 
 const VideoPlayer = ({ src }) => {
   return (
     <div className="relative">
       <iframe
-        className="w-full h-screen"
+        className="w-[60rem] h-[700px] rounded-md"
         src={src}
         title="YouTube Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -13,6 +13,9 @@ const VideoPlayer = ({ src }) => {
       />
     </div>
   );
+};
+VideoPlayer.propTypes = {
+  src: PropTypes.string.isRequired,
 };
 
 export default VideoPlayer;

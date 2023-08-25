@@ -23,7 +23,7 @@ const Modal = ({ children, onClose, css }) => {
 
   return (
     <div className={css}>
-      <div ref={modalRef} className="bg-white p-6 rounded shadow-md">
+      <div ref={modalRef} className="rounded shadow-md">
         {children}
       </div>
     </div>
