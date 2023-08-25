@@ -24,7 +24,7 @@ function DetailsCompany() {
 
         <div className="w-full lg:w-1/2 h-[25rem] animationRight">
           <div className="h-full max-md:mx-3 max-md:rounded-md flex justify-center items-center bg-no-repeat bg-center bg-cover bg-[url('assets/about_feat_bg.jpg')]">
-            <div>
+            <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -37,7 +37,7 @@ function DetailsCompany() {
                   clipRule="evenodd"
                 />
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>

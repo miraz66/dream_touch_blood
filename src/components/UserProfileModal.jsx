@@ -25,7 +25,10 @@ const UserProfileModal = () => {
         </svg>
       </button>
       {isModalOpen && (
-        <Modal onClose={() => setIsModalOpen(!isModalOpen)}>
+        <Modal
+          onClose={() => setIsModalOpen(!isModalOpen)}
+          css="absolute lg:top-16 right-0"
+        >
           <UserProfile />
         </Modal>
       )}

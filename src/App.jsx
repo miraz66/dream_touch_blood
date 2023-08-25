@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import About from "./pages/About";
 import Campaign from "./pages/Campaign";
 import Contact from "./pages/Contact";
+import Group from "./pages/Group";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/group" element={<Group />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

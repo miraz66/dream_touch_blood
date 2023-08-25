@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Modal = ({ children, onClose }) => {
+const Modal = ({ children, onClose, css }) => {
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Modal = ({ children, onClose }) => {
   }, [onClose]);
 
   return (
-    <div className="absolute lg:top-16 right-0">
+    <div className={css}>
       <div ref={modalRef} className="bg-white p-6 rounded shadow-md">
         {children}
       </div>
@@ -35,6 +35,7 @@ const Modal = ({ children, onClose }) => {
 Modal.propTypes = {
   children: PropTypes.object.isRequired,
   onClose: PropTypes.func.isRequired,
+  css: PropTypes.string.isRequired,
 };
 
 export default Modal;
