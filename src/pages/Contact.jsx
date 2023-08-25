@@ -14,7 +14,6 @@ import {
   faEnvelope,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
-import Test from "../components/test/Test";
 
 function Contact() {
   Animation();
@@ -22,10 +21,8 @@ function Contact() {
     <>
       {/* ----header section---- */}
       <Header />
-
       {/* ----About Home---- */}
       <AllPageScreen name="Contact us" />
-
       {/* ----Contact Information----- */}
       <div className="max-w-7xl mx-auto py-32">
         <h3 className="text-4xl font-medium text-gray-600">Contact us</h3>
@@ -93,7 +90,6 @@ function Contact() {
           </ul>
         </div>
       </div>
-
       {/* ----Communicate Section---- */}
       <div className="bg-gray-100 py-28">
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-10">
@@ -101,14 +97,17 @@ function Contact() {
             <CommunicateForm />
           </div>
           <div className="">
+            <h2 className="text-3xl text-gray-600 font-semibold mb-4">
+              Say hello to us
+            </h2>
+            <div className="h-0.5 bg-gray-200 my-5">
+              <p className="h-0.5 w-10 bg-red-600"></p>
+            </div>
             <CommunicationMap />
           </div>
         </div>
       </div>
-
-      <Test />
-
-      {/* ----Footer Section---- */}
+      ={/* ----Footer Section---- */}
       <Footer />
     </>
   );

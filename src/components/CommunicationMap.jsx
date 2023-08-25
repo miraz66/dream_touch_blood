@@ -2,8 +2,8 @@ import React from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "400px",
-  height: "400px",
+  width: "100%",
+  height: "100%",
 };
 
 const center = {
@@ -17,19 +17,25 @@ function CommunicationMap() {
     googleMapsApiKey: "AIzaSyBjksqy6aZ_3MZjHgAcO7IpcTkCO-YHc-A",
   });
 
-  const [map, setMap] = React.useState(null);
+  const [, setMap] = React.useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+  const onLoad = React.useCallback(
+    function callback(map) {
+      // This is just an example of getting and using the map instance!!! don't just blindly copy!
+      const bounds = new window.google.maps.LatLngBounds(center);
+      map.fitBounds(bounds);
 
-    setMap(map);
-  }, []);
+      setMap(map);
+    },
+    [setMap]
+  );
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+  const onUnmount = React.useCallback(
+    function callback() {
+      setMap(null);
+    },
+    [setMap]
+  );
 
   return isLoaded ? (
     <GoogleMap
