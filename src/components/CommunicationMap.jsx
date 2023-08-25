@@ -14,7 +14,7 @@ export default function CommunicationMap() {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: "100vh", width: "100%" }}>
+    <div style={{ height: "100%", width: "100%" }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyBjksqy6aZ_3MZjHgAcO7IpcTkCO-YHc-A" }}
         defaultCenter={defaultProps.center}
