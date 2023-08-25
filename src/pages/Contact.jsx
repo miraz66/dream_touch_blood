@@ -14,6 +14,7 @@ import {
   faEnvelope,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
+import Test from "../components/test/Test";
 
 function Contact() {
   Animation();
@@ -104,6 +105,8 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      <Test />
 
       {/* ----Footer Section---- */}
       <Footer />
