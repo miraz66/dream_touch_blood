@@ -1,14 +1,27 @@
-function CommunicationMap() {
+/* eslint-disable react/prop-types */
+import GoogleMapReact from "google-map-react";
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+export default function CommunicationMap() {
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
+
   return (
-    <div>
-      <h2 className="text-3xl text-gray-600 font-semibold mb-4">
-        Our Location
-      </h2>
-      <div className="h-0.5 bg-gray-200 my-5">
-        <p className="h-0.5 w-10 bg-red-600"></p>
-      </div>
+    // Important! Always set the container height explicitly
+    <div style={{ height: "100vh", width: "100%" }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyBjksqy6aZ_3MZjHgAcO7IpcTkCO-YHc-A" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
+      </GoogleMapReact>
     </div>
   );
 }
-
-export default CommunicationMap;
