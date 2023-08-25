@@ -1,4 +1,9 @@
+import { useState } from "react";
+import Modal from "../utils/Modal";
+
 function DetailsCompany() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <div className="max-w-7xl mt-20 md:mt-28 md:mb-36 lg:mx-5 2xl:mx-auto flex justify-between max-lg:flex-wrap-reverse">
@@ -24,7 +29,7 @@ function DetailsCompany() {
 
         <div className="w-full lg:w-1/2 h-[25rem] animationRight">
           <div className="h-full max-md:mx-3 max-md:rounded-md flex justify-center items-center bg-no-repeat bg-center bg-cover bg-[url('assets/about_feat_bg.jpg')]">
-            <button>
+            <button onClick={() => setIsModalOpen(true)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -41,6 +46,13 @@ function DetailsCompany() {
           </div>
         </div>
       </div>
+
+      {isModalOpen && (
+        <Modal
+          onClose={() => setIsModalOpen(!isModalOpen)}
+          css="fixed inset-0 flex justify-center items-center bg-opacity-50 bg-gray-900"
+        ></Modal>
+      )}
     </>
   );
 }

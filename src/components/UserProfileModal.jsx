@@ -5,7 +5,6 @@ import UserProfile from "./UserProfile";
 const UserProfileModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  console.log(isModalOpen);
   return (
     <div>
       <button onClick={() => setIsModalOpen(true)}>
