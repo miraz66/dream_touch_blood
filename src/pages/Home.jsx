@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import MainPhoto from "../assets/MainPhoto.jpg";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="h-screen bg-white overflow-hidden max-md:p-2">
@@ -18,12 +20,12 @@ function Home() {
           </p>
 
           <div className="flex justify-center md:mt-10 2xl:mt-14 mt-24">
-            <a
-              href="/login"
+            <button
+              onClick={() => navigate("/login")}
               className="px-14 py-3 lg:px-20 lg:py-4 text-2xl md:text-3xl rounded-md text-gray-200 font-Poppins font-semibold bg-red-600"
             >
               Log in
-            </a>
+            </button>
           </div>
         </div>
       </div>
