@@ -5,7 +5,7 @@ const VideoPlayer = ({ src }) => {
     <div className="relative">
       <iframe
         className="w-[60rem] h-[700px] rounded-md"
-        src={src}
+        src={`https://www.youtube.com/embed/${src}`}
         title="YouTube Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

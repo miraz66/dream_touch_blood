@@ -16,6 +16,11 @@ export default function BloodType() {
               <h3 className="mb-3 text-4xl font-medium text-gray-700">
                 What are the rarest blood types?
               </h3>
+
+              <div className="bg-gray-200 w-full h-0.5 my-5">
+                <p className="bg-red-600 w-24 h-0.5 "></p>
+              </div>
+
               <p className="text-gray-500 tracking-wide">
                 There are eight main blood types but some are rarer than others.
                 The list below shows the percentage of donors with each blood
@@ -37,6 +42,12 @@ export default function BloodType() {
               </p>
             </div>
             <div className="mx-auto">
+              <h1 className="text-4xl font-medium text-gray-700">
+                Blood Types
+              </h1>
+              <div className="bg-gray-200 w-full h-0.5 my-4">
+                <p className="bg-red-600 w-24 h-0.5 "></p>
+              </div>
               <img src={BloodTypeImages} />
             </div>
           </div>

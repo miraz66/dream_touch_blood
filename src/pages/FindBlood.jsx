@@ -1,4 +1,5 @@
 import BloodType from "../components/BloodType";
+import Compatible from "../components/Compatible";
 import Header from "../components/Headers";
 
 function FindBlood() {
@@ -44,6 +45,7 @@ function FindBlood() {
       <BloodType />
 
       {/* compatible Section */}
+      <Compatible />
     </>
   );
 }
