@@ -29,7 +29,7 @@ function UserProfileModel() {
 
         <button
           onClick={() => navigate("/login")}
-          className="mt-10 w-full py-1 rounded-md bg-gradient-to-br text-white from-gray-500 via-red-500 to-gray-500"
+          className="mt-10 w-full py-1 rounded-md bg-red-600"
         >
           log out
         </button>
