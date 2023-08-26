@@ -1,8 +1,13 @@
 import BloodType from "../components/BloodType";
 import Compatible from "../components/Compatible";
+import Footer from "../components/Footer";
 import Header from "../components/Headers";
 
+import Animation from "../utils/Animation";
+
 function FindBlood() {
+  Animation();
+
   return (
     <>
       {/* header Section */}
@@ -46,6 +51,9 @@ function FindBlood() {
 
       {/* compatible Section */}
       <Compatible />
+
+      {/* Footer Section */}
+      <Footer />
     </>
   );
 }

@@ -53,7 +53,7 @@ function DetailsCompany() {
           onClose={() => setIsModalOpen(!isModalOpen)}
           css="fixed inset-0 flex justify-center items-center bg-opacity-70 bg-gray-900 z-50"
         >
-          <VideoPlayer src="aqz-KE-bpKQ" />
+          <VideoPlayer src="aqz-KE-bpKQ" css="w-[60rem] h-[700px] rounded-md" />
         </Modal>
       )}
     </>

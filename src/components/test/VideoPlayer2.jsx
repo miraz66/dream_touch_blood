@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 
-const VideoPlayer = ({ src }) => {
+const VideoPlayer = ({ src, css }) => {
   return (
     <div className="relative">
       <iframe
-        className="w-[60rem] h-[700px] rounded-md"
+        className={css}
         src={`https://www.youtube.com/embed/${src}`}
         title="YouTube Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -16,6 +16,7 @@ const VideoPlayer = ({ src }) => {
 };
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
+  css: PropTypes.string.isRequired,
 };
 
 export default VideoPlayer;
