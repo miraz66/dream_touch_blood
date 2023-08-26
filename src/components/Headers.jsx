@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import UserProfileModal from "./UserProfileModal";
 
 const navigation = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/main-page" },
   { name: "About Us", href: "/about" },
   { name: "Campaign", href: "/campaign" },
   { name: "Find Blood", href: "/Find-Blood" },

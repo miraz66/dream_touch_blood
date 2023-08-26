@@ -16,10 +16,10 @@ function App() {
     <div className="font-Poppins overflow-hidden">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
 
-          <Route path="/" element={<MainPage />} />
+          <Route path="/main-page" element={<MainPage />} />
           <Route path="/About" element={<About />} />
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/campaign" element={<Campaign />} />

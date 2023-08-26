@@ -44,7 +44,7 @@ function Login() {
 
   function userlogin(e) {
     e.preventDefault();
-    navigate("/mainpage");
+    navigate("/main-page");
   }
 
   return (
