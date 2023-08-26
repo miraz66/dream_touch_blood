@@ -42,6 +42,8 @@ function FindBlood() {
 
       {/* BloodType Section */}
       <BloodType />
+
+      {/* compatible Section */}
     </>
   );
 }
