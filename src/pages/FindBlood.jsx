@@ -1,3 +1,4 @@
+import BloodType from "../components/BloodType";
 import Header from "../components/Headers";
 
 function FindBlood() {
@@ -38,6 +39,9 @@ function FindBlood() {
           </div>
         </div>
       </div>
+
+      {/* BloodType Section */}
+      <BloodType />
     </>
   );
 }
