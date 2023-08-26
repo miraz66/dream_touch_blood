@@ -9,7 +9,7 @@ import NotFound from "./components/NotFound";
 import About from "./pages/About";
 import Campaign from "./pages/Campaign";
 import Contact from "./pages/Contact";
-import Group from "./pages/Group";
+import FindBlood from "./pages/FindBlood";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/group" element={<Group />} />
+          <Route path="/Find-Blood" element={<FindBlood />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

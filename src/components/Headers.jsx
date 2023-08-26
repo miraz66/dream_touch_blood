@@ -7,7 +7,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Campaign", href: "/campaign" },
-  { name: "Group", href: "/group" },
+  { name: "Find Blood", href: "/Find-Blood" },
   { name: "Contact", href: "/contact" },
 ];
 
