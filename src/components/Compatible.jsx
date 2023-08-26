@@ -6,14 +6,14 @@ function Compatible() {
   return (
     <>
       <div className="bg-gray-100">
-        <div className="max-w-7xl mx-auto py-28">
+        <div className="max-w-7xl mx-3 md:mx-5 2xl:mx-auto py-20 lg:py-28">
           <div className="">
-            <h1 className="text-5xl font-bold text-gray-700 text-center tracking-wide">
+            <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold text-gray-700 text-center tracking-wide">
               Who can receive my blood?
             </h1>
 
             <svg
-              className="text-red-600 w-52 h-10 mx-auto"
+              className="text-red-600 w-44 h-7 xl:w-52 xl:h-10 mx-auto"
               viewBox="0 0 205 39"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +26,9 @@ function Compatible() {
               ></path>
             </svg>
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-20">
+          <div className="grid xl:grid-cols-2 gap-10 mt-16 lg:mt-20">
             <div className="">
-              <h2 className="text-3xl text-gray-700">
+              <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-700">
                 Which blood types are compatible?
               </h2>
 
@@ -36,7 +36,7 @@ function Compatible() {
                 <p className="bg-red-600 w-24 h-0.5 "></p>
               </div>
 
-              <ul className="text-gray-600 mt-10 animationUp">
+              <ul className="text-sm lg:text-base text-gray-600 mt-10 animationUp">
                 <li className="flex gap-3 pb-3">
                   <FontAwesomeIcon
                     className="text-red-600 pt-1"
@@ -72,7 +72,10 @@ function Compatible() {
               </ul>
             </div>
             <div className="">
-              <VideoPlayer src="B6dAPXpUjCE" css="w-full h-[24rem]" />
+              <VideoPlayer
+                src="B6dAPXpUjCE"
+                css="w-full h-[26rem] xl:h-[24rem]"
+              />
             </div>
           </div>
         </div>
