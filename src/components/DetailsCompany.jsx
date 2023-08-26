@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../utils/Modal";
-import VideoPlayer from "./test/VideoPlayer2";
+import VideoPlayer from "../utils/VideoPlayer";
 
 function DetailsCompany() {
   const [isModalOpen, setIsModalOpen] = useState(false);

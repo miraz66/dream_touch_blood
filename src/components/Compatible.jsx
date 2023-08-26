@@ -1,4 +1,4 @@
-import VideoPlayer from "../components/test/VideoPlayer2";
+import VideoPlayer from "../utils/VideoPlayer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
