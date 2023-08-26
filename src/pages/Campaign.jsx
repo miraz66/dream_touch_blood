@@ -58,7 +58,9 @@ function Campaign() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5">
             {SponsorsData.map(({ id, content }) => (
-              <div key={id}>{content}</div>
+              <div className="animationPopUP" key={id}>
+                {content}
+              </div>
             ))}
           </div>
         </div>
