@@ -85,13 +85,13 @@ export default function Header() {
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 w-full px-2 pt-2 pb-3 bg--300 backdrop-filter backdrop-blur-lg absolute">
                 {navigation.map((item) => (
-                  <a
+                  <NavLink
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="block hover:underline uppercase rounded-md px-3 py-2 text-base font-medium"
                   >
                     {item.name}
-                  </a>
+                  </NavLink>
                 ))}
               </div>
             </Disclosure.Panel>
