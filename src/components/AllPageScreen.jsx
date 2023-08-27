@@ -8,7 +8,7 @@ export default function AllPageScreen({ name }) {
           <h2 className="pb-2 text-4xl font-semibold uppercase md:tracking-widest">
             {name}
           </h2>
-          <div className="flex gap-2 text-lg font-semibold">
+          <div className="text-lg font-semibold flex gap-2">
             <a
               className="after:content-[' '] after:bg-red-500 after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer"
               href="/"

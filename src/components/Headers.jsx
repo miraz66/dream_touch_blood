@@ -34,7 +34,7 @@ export default function Header() {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex items-center">
                     <a
-                      className="text-gray-400 lg:text-center font-bold text-3xl lg:text-4xl 2xl:text-5xl"
+                      className="text-gray-400 lg:text-center font-bold text-3xl lg:text-2xl 2xl:text-5xl"
                       href="http://localhost:5173/"
                     >
                       <span className="text-red-500">Blood</span>{" "}
@@ -62,8 +62,8 @@ export default function Header() {
                             return (
                               "px-3 font-medium" +
                               (!isActive
-                                ? "after:content-[' '] after:bg-red-500 after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer xl:text-lg"
-                                : "cursor-pointer border-b-2 border-red-600 xl:text-lg")
+                                ? "after:content-[' '] after:bg-red-500 after:m-auto after:block after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer lg:text-sm xl:text-lg"
+                                : "cursor-pointer border-b-2 border-red-600 lg:text-sm xl:text-lg")
                             );
                           }}
                           aria-current={item.current ? "page" : undefined}
