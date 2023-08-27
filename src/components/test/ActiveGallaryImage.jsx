@@ -1,13 +1,12 @@
-import gallary_1 from "../assets/gallery_1.jpg";
-import gallary_2 from "../assets/gallery_2.jpg";
-import gallary_3 from "../assets/gallery_3.jpg";
-import gallary_4 from "../assets/gallery_4.jpg";
-import gallary_5 from "../assets/gallery_5.jpg";
-import gallary_6 from "../assets/gallery_6.jpg";
-import gallary_7 from "../assets/event_3.jpg";
-import gallary_8 from "../assets/testimonyFeatImg.jpg";
-import { useState } from "react";
-import Modal from "../../utils/Modal";
+/* eslint-disable react/prop-types */
+import gallary_1 from "../../assets/gallery_1.jpg";
+import gallary_2 from "../../assets/gallery_2.jpg";
+import gallary_3 from "../../assets/gallery_3.jpg";
+import gallary_4 from "../../assets/gallery_4.jpg";
+import gallary_5 from "../../assets/gallery_5.jpg";
+import gallary_6 from "../../assets/gallery_6.jpg";
+import gallary_7 from "../../assets/event_3.jpg";
+import gallary_8 from "../../assets/testimonyFeatImg.jpg";
 
 const gallaryImages = [
   { id: 1, images: gallary_1 },
@@ -21,5 +20,19 @@ const gallaryImages = [
 ];
 
 export default function ActiveGallaryImage({ imagesId }) {
-  return <div>ActiveGallaryImage</div>;
+  return (
+    <>
+      {gallaryImages.map(
+        ({ id, images }) =>
+          imagesId == id && (
+            <img
+              className="w-80 h-60 md:w-[30rem] md:h-[25rem] lg:w-[35rem] lg:h-[25rem] 2xl:w-[40rem] 2xl:h-[30rem] 3xl:h-[40rem] 3xl:w-[50rem]"
+              key={id}
+              src={images}
+              alt=""
+            />
+          )
+      )}
+    </>
+  );
 }
