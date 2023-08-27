@@ -12,7 +12,7 @@ function HomeCard() {
           can bring smile <br />
           in other person face
         </h1>
-        <div className="">
+        <div>
           <Button
             name={"Donate Now"}
             css={

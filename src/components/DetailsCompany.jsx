@@ -14,7 +14,7 @@ function DetailsCompany() {
               Who We Are?
             </h2>
             <hr className="w-16 md:w-28 bg-red-600 h-0.5 mb-5" />
-            <p className=" text-base md:text-lg pb-5 text-gray-800 animationDown">
+            <p className="text-base md:text-lg pb-5 text-gray-800 animationDown">
               Blood Buddies is for public donation center with blood donation
               members in the changing health care system.
             </p>

@@ -1,4 +1,4 @@
-import VolunteersCard from "../../utils/VolunteersCard";
+import VolunteersCard from "../../components/VolunteersCard";
 import Team_9 from "../../assets/team_9.jpg";
 import Team_7 from "../../assets/team_7.jpg";
 import Team_6 from "../../assets/team_6.jpg";

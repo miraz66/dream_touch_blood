@@ -15,7 +15,7 @@ function HelpingSection({ css }) {
             thousands of other venues on various occasions.
           </p>
         </div>
-        <div className="">
+        <div>
           <Button
             name="Request Appointment"
             css="bg-red-600 px-5 lg:px-6 py-3 lg:py-4 xl:text-xl text-white hover:bg-gray-700 ease-in-out duration-300"

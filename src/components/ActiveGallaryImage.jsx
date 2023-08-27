@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import gallary_1 from "../../assets/gallery_1.jpg";
-import gallary_2 from "../../assets/gallery_2.jpg";
-import gallary_3 from "../../assets/gallery_3.jpg";
-import gallary_4 from "../../assets/gallery_4.jpg";
-import gallary_5 from "../../assets/gallery_5.jpg";
-import gallary_6 from "../../assets/gallery_6.jpg";
-import gallary_7 from "../../assets/event_3.jpg";
-import gallary_8 from "../../assets/testimonyFeatImg.jpg";
+import gallary_1 from "../assets/gallery_1.jpg";
+import gallary_2 from "../assets/gallery_2.jpg";
+import gallary_3 from "../assets/gallery_3.jpg";
+import gallary_4 from "../assets/gallery_4.jpg";
+import gallary_5 from "../assets/gallery_5.jpg";
+import gallary_6 from "../assets/gallery_6.jpg";
+import gallary_7 from "../assets/event_3.jpg";
+import gallary_8 from "../assets/testimonyFeatImg.jpg";
 
 const gallaryImages = [
   { id: 1, images: gallary_1 },

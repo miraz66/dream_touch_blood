@@ -1,7 +1,7 @@
 import Button from "../utils/Button";
 import { useState } from "react";
 import Modal from "../utils/Modal";
-import ActiveGallaryImage from "./test/ActiveGallaryImage";
+import ActiveGallaryImage from "./ActiveGallaryImage";
 
 // ----All Images----
 import gallary_1 from "../assets/gallery_1.jpg";

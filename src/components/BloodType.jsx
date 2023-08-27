@@ -12,7 +12,7 @@ export default function BloodType() {
             You will find out your blood type after your first blood donation.
           </p>
           <div className="mt-10 lg:mt-20 grid xl:grid-cols-2 max-xl:gap-10">
-            <div className="">
+            <div>
               <h3 className="mb-3 text-xl md:text-2xl lg:text-3xl font-medium text-gray-600">
                 What are the rarest blood types?
               </h3>

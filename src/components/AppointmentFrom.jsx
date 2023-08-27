@@ -14,7 +14,7 @@ export default function AppointmentFrom() {
               <input
                 type="text"
                 id="name"
-                className="w-full border rounded py-2 px-3"
+                className="w-full py-2 px-3border rounded"
               />
             </div>
 
@@ -25,7 +25,7 @@ export default function AppointmentFrom() {
               <input
                 type="email"
                 id="email"
-                className="w-full border rounded py-2 px-3"
+                className="w-full py-2 px-3 border rounded"
               />
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function AppointmentFrom() {
               <input
                 type="text"
                 id="phone"
-                className="w-full border rounded py-2 px-3"
+                className="w-full py-2 px-3 border rounded"
               />
             </div>
 
@@ -69,7 +69,7 @@ export default function AppointmentFrom() {
               <input
                 type="text"
                 id="date"
-                className="w-full border rounded py-2 px-3"
+                className="w-full py-2 px-3border rounded"
               />
             </div>
 
@@ -80,14 +80,14 @@ export default function AppointmentFrom() {
               <input
                 type="text"
                 id="time"
-                className="w-full border rounded py-2 px-3"
+                className="w-full py-2 px-3border rounded"
               />
             </div>
           </div>
 
           <div>
             <textarea
-              className="w-full border pl-3 pt-2"
+              className="w-full pl-3 pt-2 border"
               name="Message"
               placeholder="Your Messages..."
               cols="30"

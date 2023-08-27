@@ -7,7 +7,7 @@ function Compatible() {
     <>
       <div className="bg-gray-100">
         <div className="max-w-7xl mx-3 md:mx-5 2xl:mx-auto py-20 lg:py-28">
-          <div className="">
+          <div>
             <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold text-gray-700 text-center tracking-wide">
               Who can receive my blood?
             </h1>
@@ -71,7 +71,7 @@ function Compatible() {
                 </li>
               </ul>
             </div>
-            <div className="">
+            <div>
               <VideoPlayer
                 src="B6dAPXpUjCE"
                 css="w-full h-[26rem] xl:h-[24rem]"

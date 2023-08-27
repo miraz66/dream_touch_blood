@@ -22,8 +22,10 @@ function Contact() {
     <>
       {/* ----header section---- */}
       <Header />
+
       {/* ----About Home---- */}
       <AllPageScreen name="Contact us" />
+
       {/* ----Contact Information----- */}
       <div className="max-w-7xl mx-3 lg:mx-5 2xl:mx-auto py-20 md:py-32">
         <h3 className="text-4xl font-medium text-gray-600">Contact us</h3>
@@ -31,7 +33,7 @@ function Contact() {
           <p className="h-0.5 w-14 bg-red-600"></p>
         </div>
 
-        <div className="">
+        <div>
           <ul className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 max-lg:gap-5">
             <li className="max-lg:flex gap-3">
               <FontAwesomeIcon
@@ -91,6 +93,7 @@ function Contact() {
           </ul>
         </div>
       </div>
+
       {/* ----Communicate Section---- */}
       <div className="bg-gray-100 py-20 md:py-28">
         <div className="max-w-7xl mx-3 lg:mx-5 2xl:mx-auto grid lg:grid-cols-2 gap-10">
@@ -108,6 +111,7 @@ function Contact() {
           </div>
         </div>
       </div>
+
       {/* ----Footer Section---- */}
       <Footer />
     </>
