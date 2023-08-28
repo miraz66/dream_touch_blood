@@ -49,8 +49,12 @@ function Login() {
 
   return (
     <>
-      <section className="bg-gray-50 dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-center px-3 md:px-6 py-8 mx-auto h-screen md:h-screen lg:py-0">
+      <section className="bg-gray-50 dark:bg-gray-900 ">
+        <div
+          className="pt-20 
+        
+        flex flex-col items-center md:justify-center px-3 md:px-6 py-8 mx-auto h-screen md:h-screen lg:py-0"
+        >
           <div className="w-full bg-gradient-to-br from-gray-500 via-red-500 to-gray-500 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
             <div className="bg-white">
               <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
