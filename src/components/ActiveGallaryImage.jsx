@@ -1,4 +1,6 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
+
+// All images
 import gallary_1 from "../assets/gallery_1.jpg";
 import gallary_2 from "../assets/gallery_2.jpg";
 import gallary_3 from "../assets/gallery_3.jpg";
@@ -36,3 +38,7 @@ export default function ActiveGallaryImage({ imagesId }) {
     </>
   );
 }
+
+ActiveGallaryImage.propTypes = {
+  imagesId: PropTypes.number.isRequired,
+};
